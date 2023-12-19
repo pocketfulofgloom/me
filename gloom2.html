@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slow Type Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            transition: background-color 0.5s, color 0.5s;
+		background-color: black; /* Set the default background color to black */
+            color: white; /* Set the default text color to white */
+        }
+
+        #output {
+            white-space: pre-line;
+            font-family: monospace;
+            font-size: 18px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        #controls {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        #speedControl, #sizeControl {
+            margin-bottom: 10px;
+        }
+
+        .colorButton {
+            cursor: pointer;
+            padding: 10px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        #blackWhiteBtn {
+            background-color: black;
+            color: white;
+        }
+
+        #whiteBlackBtn {
+            background-color: white;
+            color: black;
+        }
+
+        #blackGreenBtn {
+            background-color: black;
+            color: #39FF14; /* Neon green color */
+        }
+
+	#beigeBrownBtn {
+		background-color: #F5F5DC;
+		color: brown
+}
+    </style>
+</head>
+<body>
+
+    <div id="controls">
+        <label for="speedControl">Speed:</label>
+        <input type="range" id="speedControl" min="1" max="100" value="32">
+        <span id="speedValue">5</span>
+
+        <br>
+
+        <label for="sizeControl">Text Size:</label>
+        <input type="range" id="sizeControl" min="10" max="30" value="18">
+        <span id="sizeValue">18</span>
+    </div>
+
+
+    <div>
+        <button class="colorButton" id="blackWhiteBtn" onclick="changeColors('black', 'white')">Black Background, White Text</button>
+        <button class="colorButton" id="blackGreenBtn" onclick="changeColors('black', '#39FF14')">Black Background, Neon Green Text</button>
+ <button class="colorButton" id="whiteBlackBtn" onclick="changeColors('white', 'black')">White Background, Black Text</button>
+	<button class="colorButton" id="beigeBrownBtn" onclick="changeColors('#F5F5DC', 'brown')">Beige Background, Brown Text</button>
+    </div>
+ <br>
+    <div id="output"></div>
+ <br>
+ <div>
+	  <button class="colorButton" id="whiteBlackBtn" onclick="location.href='index.html'">main.</button>
+    <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom1.html'">chapter 1.</button>
+    <button class="colorButton" id="whiteBlackBtn" onclick="location.href="gloom2.html'">chapter 2.</button>
+    <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom3.html'">chapter 3.</button>
+</div>
+      <script>
+        const textToType = `
+            2 // BAND-AID PILLS 
+ 
+The pill settled on her tongue, rolled wetly, and her tongue retracted and bounced it to the back of her throat. It slipped and spun and spiralled down, clanking and clattering against the sides of her oesophagus like a bag in a trash chute rattling down.
+	Naomi began to shake and shiver. I laid her down on the bed as I had the past several nights, wiping beading salty droplets off my forehead with a sweat stained glove so that they didn’t scatter across her body, mingling with her sweat like a salty sea lapping against the shore.
+	She shivered and groaned a fearful plea to me, eyes wide and mouth mute as the drugs made her lightheaded, constricted around her brain-blood barrier. I could almost see it— the Band-Aid-pill popped and that strange fibrous organism erupted from it, shoving the casing aside; worked its way through her Eustachian tubes and wriggled its path across the auditory nerve. It swindled and slipped its way into her brain casing and wrapped sweet arms around its folds, stretching fibrous flaxen sinews to tie the spongy hemispheres together; worked its way between the pink and white matter and beneath so many grooves and crevices, yanking the brainstem tight to the spinal cord. 
+	Naomi coughed and wheezed and tried to push herself off the bed, tottering and collapsing to the mattress. She trembled once, twice, and went still. At this point I would’ve panicked— but I’d done this for seven nights now. Sweating, discarded, she laid there like a bloating cadaver awaiting the final burn. She breathed calmly, for a while.
+	Then she took her dainty fingers and pressed her crooked glasses up on the bridge on her nose where sweat had collected. Naomi was aware again.
+	“Gabe,” she called, and I stopped by her side. She grabbed my shoulder and gripped right.
+	“Gabe? I can see again,” she said, breathing heavily. “Just like normal. But it all feels wrong. Muted, like something’s missing. I just don’t feel right, Gabe, I don’t feel right at all. How can I fix that?”
+	“It’s okay,” I said. The words were empty. My teeth felt dull when my tongue clicked against it to form the hollow sounds: “We’re going to fix it.” My tongue was built of a thousand snakes propulsing meaningless, devoid words. They glided fluidly over each other, scales rattling, all hissing together to tell some fatal fiction to poor Naomi’s ears.
+	“I’ll fix it,” they whispered. I’ll fix you.
+	We didn’t fix her.
+	
+“They’re not working, Gabe,” Naomi would say, “The cogs behind my eyes are back, and they’re spinning again in that endless plain of sparking orange smoke, they’re moving and changing things. Gabe, why didn’t you let me go? Why won’t you let me go?”
+	I stared at her blanket as her casino slot eyes began again to glow and spin, glancing around at the other pupils that whorled in and then whisking away in a current of blurry colour. She covered her vision with thin fingers as if the thick glass shades weren’t enough. 
+	“I’ll get you more pills,” I muttered, and cupped a handful over her mouth. She swallowed them all without complaint.
+	
+Each night went like this. Each night on the damn band aid pills, those damn band aid pills that Stuart swore would mitigate the lingering side effects of gloom— they did nothing, or worse, made her condition devolve. 
+	Each day she’d profess her desire to be left behind, or to be fixed, or to be left to the insane devices spinning behind her eyes; each day the pills didn't work as well as they had the night before.
+	But that was because they weren’t meant to. I’d buried the cause of her distress so deeply in my mind— buried the reason why the band-aid pills weren’t working on Naomi. The truth was that her psychosis was all my fault. Naomi and my other friends didn’t know what my fingertips had done to her; I alone knew that it wasn’t only the gloom that affected her. The night that I’d laid with her, my fingertips had corrupted something deep in her; the glowing and crashing and burning spinning spokes flitting behind her eyes had nothing at all to do with her gloomstick’s tendrils. So those poor, fibrous creatures that were the band-aid pills, failing to understand their mission, struggled to keep her brain together; their interwoven fibres stretched beyond their limits, tore and dissolved into smaller things and died.
+	As her episodes worsened, I’d catch her standing bolt upright in the hallways, muscles tensed, sinews straining, veins pulsing to pop; she’d open her teeth and scream in silence like a wild animal, beating her chest to some strange song without a sound escaping those soft, snarling lips.
+	I needed a solution. My friends were starting to doubt me— I was alone with her that night, and nobody else had seen her after the beach. 
+What did I do to her? 
+What did she see?
+	But I couldn’t find a better solution. 
+	
+Stuart stared down at me with contempt. His eyes, red-rimmed, emanated coal burnt rage.
+	“She hasn’t been the same since that night, Gabe. And she never takes off those damn glasses. What did you do to her? What did she see?”
+	Heat radiated off of him but I only swallowed hard, forcing my eyes to stay fixed downwards. I stared listlessly into the carpet as the patterns roared and spidered and squirmed to life, crawling around each other and chewing each other to pieces with bubbling burns in the fabric.
+	“Not anything you could understand,” I mumbled. 
+	I felt like I was falling into those patterns, and then I was submerged in the water again, dragged under by the current’s pulling arms. I opened my eyes and they burned and I saw bubbles everywhere, churning, the cold leaking into my mouth and digging bolts into my tongue as it rushed down my throat. I saw Naomi and grabbed her as she thrashed, danced the danse macabre, struggling to make her final throes seen to that sunlight shining brightly above.
+	“She’s been losing her mind, Gabe,” Stuart said, staring at me. 
+	I didn’t respond, remembering thrashing evenings of barbed dreams. I’d been waking up slightly after midnight every night since the incident, choking on air that tightened an insane, barbaric grip around my throat and choked me out of the cold unnatural air I needed. Sometimes I’d wake up to her casino-slot eyes rapidly spinning beside me, her skull nestled into the pillow and mouth gaping wide, globules of drool rolling out to ripple their way down the bedspread; shattering into a million tiny droplets that glittered under the glow of those eyes. Other times she’d be hanging over me, mouthing my Gabe silently and forming coiled question marks with her muted tongue that never escaped.
+	The next time Stuart spoke, his voice was softer, melded into the soft tones of flaxen fields heated in the sun; “I need to know what happened, so we can fix it.”
+
+“It’s okay. We’ll fix it.”
+	She laid beneath me on the seashore as the birds cawed overhead. Droplets ran in serpentine rivulets down her ice-cold skin.
+
+I fixed my eyes on Stuart. He looked at me, gaze partly accusing, partly sympathetic. He was one of my friends at the beach that night— the night the taste of gloom lingered first and forever on my parched and raspy tongue. Stuart was the sympathetic type, but he could be quick to anger— had a full, curly brown beard but nothing at all on his shiny bald head; his face was constantly reddened at the cheeks as if drunk. He took a ridiculous amount of drugs and was a heavy alcoholic back in the day— post-recovery he’d become the group’s medic.
+	As my brain meandered down that dusty path where memories lie, an idea sputtered, sparked and drawled in my head; and like an antique truck it guzzled out a cough of smoke and began to roar.	“Give me a bit to think, Stuart,” I said as I fixed my gaze with a snap. “I’ll let you know.”
+	Stuart’s eyebrows rose but he didn’t argue. He was used to my peculiarities by now, as one becomes having a friend who never takes off his gloves. “Alright,” he grumbled, and got to his feet, waddled off. He trusted me. I felt my eyes creak shut and followed my train of thought. 
+	When I was young, I’d corrupted a girl my age before learning the depths of the power of my fingertips.
+
+The beginning of the memory was blurry, warped— trees smeared into the skies which blurred and shook and shimmered endlessly, experiencing some sort of blindspot in recall. I suppose that’s what happens with old memories, or even memories of little importance. But I think we were playing tag— and the green grass roared by underfoot. My twisting fingertips touched the small of Lawson’s back— contact was made and everything changed. My memory snapped suddenly to clarity.
+	My mouth dropped open and Lawson dropped to the floor, shaking and shuddering.
+	“LAWSON?” I shouted, then more terrified, screamed, “LAWSON!!!” 
+	I started to cry as she quaked and quivered, her head impacting outwards on the left side and warping before snapping back into place.
+	As faceless adults rushed in, Lawson stood up, unharmed.
+	A chorus of vague words— “Are you okay, is everything okay? Are you fine? Let me look—“
+	—which whisked and beat away to silence as my friend said the words I dread to this day.
+	“Who are you?” she said, looking at me.
+	“What?” I whispered in horror.
+
+I thought for a moment. Lawson had been my friend for two weeks— two long weeks, in my eyes, because they had mattered to me. Of course, it was a light caring— as a kid we had drawn and played and become close— but they were all wiped from her mind when I touched her. Her parents never seemed to notice a memory gap, and we were never friends again that young. That wasn’t until later, when we were in middle school. 
+	So there were a few possibilities— one, Lawson forgot only a brief period of time, no longer than two weeks, in which she had met me. Two, Lawson had forgotten only the memories surrounding me— perhaps in that two week period? That would make sense, as her parents hadn’t noticed a change in her memories. Or maybe they were unobservant— which happens with a child that young. Maybe her forgetting me was a fluke.
+	Or she may not have forgotten me or those two weeks. Instead, she may have reverted to a version of herself that never experienced meeting me. Snapped back in time. In other words, perhaps my fingertips rewound her clock to a time before she had ever met Gabe, let alone befriended me. I replayed the memory a few more times, honing in on the point of impact of my tiny fingertips to the small of her back, below her left shoulder blade. I memorised the location, impact strength, and angle. I kept winding and rewinding that dwindling memory until the dust of flickering neurons parched and tore it to sparking smithereens.
+	Maybe I could do to Naomi what I’d done to Lawson. Maybe I could turn back her clock, wiping the fact that she’d ever met me— or gained those slot machine eyes.
+	
+Night fell. I pulled that empty sac, that bundle of branching bone and throbbing veins and heart and alveoli that I called Naomi close to me. Hollow, vacuous without the pill; the girl had become a shell of what used to be. I pretended that wasn’t the case, closed my eyes and held her gently. I drifted off.
+	The ocean churned around me as Naomi thrashed her death throes. I pressed down on her, performing CPR on the beach. Her breath wouldn’t come. Desperate, I pressed my fingers into her neck and she convulsed.
+	Eyes flew open, bright, and she clung to me. Her speech was a garbled mess, but her eyes stared intellect into mine.
+	I frowned.  “It’s okay,” I murmured to her as she coughed up spit. “We’ll fix this. “
+	I blinked my eyes awake in the darkness. I didn’t know when I fell asleep— I didn’t know what time it was. A quick glance at the clock on the nightstand showed it to be 1:00 AM. Shit. So much for talking to Stuart.
+	I reached out to Naomi, expecting those beautiful locks to slide between my fingers. But I looked over and she wasn’t there. 
+	“Fuck,” I whispered. My vision was grainy and lagged when I moved my eyes, and the bed threw shadows, deep and dark shapes emerging to flicker, dance and fizzle out into nothingness— but I managed after a time to focus my gaze out the window.
+	A blue glow shone in. Out on a large boulder graced with grass and lichen, Naomi stood at the tip, arms outstretched. Her fingertips yearned for nothingness, stretched, grasped; the moonlight bathed her in a pale aquamarine glow.
+	I swore and pushed myself out of bed as its pulling hands tried to yank me back, shoving a stinging weight off my chest as I went. My feet carried me without a thought to Naomi’s rock. Pale gloves hands gripped the rock to propel me up, and I grabbed the scruff of her shirt without a word.
+	And then I heard the sound of it. Her sobbing. The tears fell to roll down her cheeks slowly, pushing aside the accumulated dirt on her cheeks with those perfectly glistening wet orbs. 
+	“Just let me go, Gabe,” she said. “Just let me go.”
+	I pulled her to my chest and she only sobbed more heavily.
+	“Back to bed,” I muttered.
+	I guided her back to the room with my arm around her quaking, shivering shoulders. Twice she made a torn, almost pained noise and tried to struggle out of my arm. When I got back inside, I nearly threw her to the bed. I couldn’t stand this any longer. It’d been days and days, a nightly occurrence.
+	Gazing contemptuously at Naomi, that wasted, discarded form, I took a handful of band aid pills and a bottle of water.
+	She took them without another thought.
+	 
+Sitting there beside her was insanity. My eyes bulged in their sockets; the spidering veins pulsed, reddening the milky orbs that were my eyes. I stumbled my way through the house. Need to do something. Need to get my mind off of her. 
+	I wandered the home with a brain on autopilot. Before I knew it, resting before me were seven trash bags filled with the house’s filth and debris. Those seven trash bags, one by one, I took to heave in the dumpster by the yard. As I did, I felt Stuart’s eyes on me, glaring at my back in both accusation and vague curiosity. He must’ve heard my exchange with Naomi— or overheard my clumsy wandering— and come to sit in the living room.
+	Each time I stepped into the mossy grass, the wet crumbling earth meshed between my toes and sponged with life. I went back and forth like a train spewing steam, sheerly whistling in varying shrills but untamed, unrailed and without destination.
+	I felt the cool summer wind dance on my skin, took a deep breath in and let it fill my lungs. I dropped the last bag into the dumpster. The deep navy blue that filled the sky with a heavy, dull ache quickly peppered with the squiggling black shapes of crows that danced and shimmered and shook and spun, weaving their tales across the universe; I spread my fingers and freed them from my gloves for a long lasting moment to feel the playful wind snake between my fingers and hug them. Flies, grains of pollen, dandelion plumes, touched by my fingertips in passing spewed to the shadowed earth as sparks and bolts and nuts. Fireworks spewed from my fingers and I felt like a god.
+	Casting my vision down to the house, I sobered up. I slipped back on my gloves and felt the weight of the world settle back down upon my shoulders, clamping tight around my waist and binding me like some cruel iron cabling. As the night darkened, I traipsed back into the warmth and light.
+	I settled next to Naomi with a glow in my heart.
+ 
+I have to do it today. There’s no more waiting. 
+As I slipped the Band-Aid pill between her lips, those roulette eyes spun and glowed and started to melt. 
+	“Fix me,” she whispered, “Oh, Gabe, please fix me or let me go.” I pulled her close instead as her eyes leaked glowing colours onto my back, her breath coming in hiccups and shuddery wet gasps as the worn out Band-Aid pill constricted around her mind.
+	
+Stuart was sitting on the couch, the small fibres that made up the embroidery dancing to some strange song. He teased a fibre between his fingers, rolling it back and forth like a gloomstick.
+	“You told Ren you needed me,” he said as I settled down. I had indeed— Ren had been there for the night I corrupted Naomi, too. And I knew exactly how much Ren worried about Naomi. I knew they’d get the message across.
+	Naomi wasn’t with me— she was somewhere out in the house having an episode. I could almost see it; her eyes like gleaming pools of wet paint, they swirled and glowed internally in a myriad of colours. Somehow, I knew all she saw and heard and felt in that moment were rainbow colours screaming and screeching; the rough, porous feeling of them scraping against her mind tantalisingly as she gripped the sink the white ceramic tile with slippery white fingers—-
+	“I need you to tell me what you know about the gloom suppressants she’s on,” I told Stuart rapidly, “And any kind of pills you could take to lessen the side-effects of gloom. I think she’s having an allergic reaction to Band-Aid pills.”
+	Come on, Gabe. Just tell him the truth, my brain whispered.
+	I stayed silent. Where my fingers laid, twitching, the couch’s fibres were dancing up and twining around my fingers. They started curiously, imploringly, then bound tight with painful strength to hold me rigidly in place.
+	Just let me stay here. Just a while longer. For now, Naomi is still mine.
+	Stuart huffed out a hot breath, rubbing his hands together. “Right. Band-Aid pills are what she’s on. From what you described, Naomi’s undergoing GPPD- gloom persisting perception disorder. Now, the pills— those’ll ease the symptoms for a while,” Stuart drawled. “But they’re called Band-Aid pills for a reason. They don’t last. In cases of long-lasting GPPD, patients regain their sanity for a period of about twelve hours on the pills, then they stop working— and when you rip off that Band-Aid their psychosis will be the same or worse than before. As you know, those patients have to wait 18 hours between each dose. Naomi’s not allergic to Band-Aid pills, Gabe— she’s gaining tolerance to them. In life, bandages are never permanent— they’re not designed to be. If the wound under them festers, stagnates, becomes infested, they’re nothing but sticky fibres that foster malintent and tear apart everything good. So these pills, Gabe— they won’t stop the episodes. Not if there’s some underlying condition. What they will do is give you some time. You need to deal with whatever truly happened to Naomi. Someday, those pills are gonna stop working altogether- and she’ll be worse off than ever.  A permanent psychotic lull.”
+	“Thank you,” I said simply— the fibres of the blanket were dancing and spinning extraordinarily high, wrapping themselves around Stuart’s fingers and choking them to death. I let it sink in. “Stuart, I actually need to ask you something—“
+	He brushed me off. “I know what you’re going to say. Gabe, I know that you know exactly what happened to that girl, and I know that you’re not going to tell anyone the truth. Now, I know that about you. I also know that you’re going to do whatever it takes to fix her up. You need to find the root of what happened and yank it out.”
+	Good luck with that, I think sarcastically, that root is me, and yanking it out won’t do her any good.  
+	“Stuart. I actually need you for this. I’ll tell you everything.”
+	He looked shocked. All this week I’d been as mute as Naomi during her worst silent spells. As her condition worsened, my silence did too— which didn’t help matters. I watched with a locked jaw and heavy eyes as my silence exacerbated tension within the group of my friends— and saw their trust in me worn thin with the grinding, kneading stresses of my silence. With my silence throughout Naomi’s deterioration being unmoved, I knew that any honesty came as a surprise.
+	I was about to explain what I needed Stuart to do when Naomi shattered something massive with a concussive blast. Stuart moved to get up but I held up a hand by habit, pushing off the couch to go deal with it myself. It came from the bathroom, and I hurried in.
+	Naomi was absolutely coated in little glimmering pools of moonlight, swathed in a sea of glass. She’d shattered that massive mirror that hung over the sink, the one where I’d first shown her her new eyes. Myriad shards had scraped and lodged themselves in her skin and piled all about her in ample crests and waves. Her knees were pulled up right to her chest, her whole being huddled tightly on the toilet seat. She made a pleading noise that was almost animal, almost inhuman, or like that of a crying newborn; and reached her arms out. I walked over to her, crashing through that shining ocean as sharpened shards glinted and dug fresh rivets into my skin. I settled down by her and dusted the glass off her skin, feeling her muscles quake frigidly under my fingertips. My left glove I tore off with my teeth, touching the two large shards that dug into her skin with careful fingers. I watched the shards transform, squirming out of her wound as objects new— one as a small green bowler hat and the other as a squirming earthworm, both leaving crimson rivers of blood in their wake.
+	“I got you, you’re okay,” I whispered, and Naomi shuddered and mumbled incomprehensible sounds. I carried her to bed, spilled her down in the sheets and hugged her tight.
+	“Stay put,” I mumbled incoherently. I hoped she got it, but didn’t really care.
+	I swung to the bathroom and closed the door, curling into a ball on the floor myself. The glass tinkled and pierced my own legs and arms and I gently bled. I opened my eyes— quickly I needed to clean up my own mess. 
+	I tore off my other glove and left both gloves, open mawed, resting limply on the toilet seat. I reached out my fingers and dragged my fingertip through that perilous ocean. I touched every last shard, one by one, until the room was coated with birds and parrots and worms and uprooted grass and clicking scorpions and well-worn books and torn-off pages and squalid rodents. I became encased in a wilderness of my own creation, and the fluttering things, the butterflies and parrots, swung and swooped up in a cascade to whip around me in a spiralling whirlwind. Each new creature was marked with an increasingly visible red fingerprint.
+	I hung my head down. Then, gently amidst the noise and haste, I patched myself up, my hands, my fingers, my feet and my legs, and eased open the door a crack. Stuart being gone, I managed to usher the majority of the wildlife out the back door. The rest stuttered about to make their new homes in our shared house.
+	By the time I got to Naomi with gauze and bandages, she’s knocked out cold, the cut on her cheek and arm long scabbed over and healed. It was too late to patch her up myself. I fell into bed next to her and sobbed.
+	
+When I opened my eyes, the hollow shell of a girl was gone. Before my eyes, the warm imprint where her body had laid gently swum and spiralled and whorled. Blinking hard, I instinctively reached for the band-aid pills and water bottle. My fingers flinched back as if they’d touched a white-hot stovetop. The pill tube, my failsafe, was light as a feather. Only one pill left. The final pill rolled smoothly around in its tube with a quiet rolling plastic grinding rolling. 
+	There were nine ridges on the bottom of the bottle, little plastic bumps formed in production. As the pill skittered across them, it jumped slightly, echoed with each bump. The jump echoed in my head with the echoing strength of a gong swaying, booming. The bottle shouted nine desolate, ringing tones. The pill spun and spiralled and danced, rolled to a stop, and Naomi went still in the ocean frothing shooting rain rushing down.
+	I stumbled out of the room, distraught and breathless.  Sweating heavily through my armpits, soaking that thin cloth, I called for the large man with the ever-present blush and the burly beard. It was time.
+	
+“Hold her down,” I told Stuart, and without a word her wrists were pinned to the fabric of the couch. My gaze felt leaden as I watched that woven cloth’s frayed threads spiral around in my hallucinatory gaze to swirl and tighten Naomi’s delicate pale fingers into the fabric.
+	“I’ll fix you,” I whispered as the ocean waves crashed and beat against the shore in an endless fluid cycle.
+	The strings cut off blood flow to her fingers.
+	They’re not real. Hallucinations of the mind, that’s all. Strange distortions of the mind and of the mind alone.
+	Those searching cloth fibres, unsatisfied with my empty girl, lashed out like snakes to bite and maw me, tightened around my rib cage. I blinked and willed them to melt away.
+	Only a corruption of the soul.
+	I’d told Stuart everything. All about the corruption, the gloomstick, my touch on the small of her back. I had to— I really did have to— and the moment my story finished and I raised my heavy eyes to meet Stuart’s. I noticed that his eyes had turned cold, dead— all trust and comradery gone.
+	“You’ve caused Ren a world of pain, Gabe,” he said simply. “You should’ve been honest.”
+	I was shocked at the time that he didn’t mention Naomi. What Naomi, my girl fascinated with death, had gone through. I wasn’t aware of whatever happened with Ren. I’d have to deal with the repercussions of that later on in the day, I was sure.
+	I peeled off my left glove. Naomi made a muffled sound, that delicate face, those sly, sleek, freckle-peppered cheekbones pressed unforgivingly into the writhing cloth of the couch.
+	“Stuart,” I said, “This is very important. You cannot let her move an inch when I plant my fingers down. If anything goes wrong, any minute movement, even a millimetre— it could distort her irreversibly. This could kill Naomi.”
+	Not like I didn’t already, I thought for a moment.
+	“Got you,” Stuart replied, straining. He became a silent statue whose shoulders ground audibly as he pinned Naomi in place with the strength of a thousand avalanches.
+	Naomi made a muffled plea, and I knew it was her last. She turned her head, straining, to face me with those insane puppy dog eyes.
+	I felt my stomach drop and churn and twist. For a moment, those quiescent lake eyes encompassed me. “I love you,” I whispered, but my lips felt dead as lead and the words were as quiet as the words that never left Naomi’s soft, muted lips.
+	I’m playing tag with Lawson. I’m running through those dancing fibres we call grass, laughing and giggling. I raise my fingers, two stretched out only a millimetre further than the rest— bring them down at 30 degrees downward— and plant them on her unsuspecting back.
+	I planted my fingers down on her back and she fell to the ground.
+	
+
+`
+
+        const outputElement = document.getElementById('output');
+        const speedElement = document.getElementById('speedControl');
+        const sizeElement = document.getElementById('sizeControl');
+        const speedValueElement = document.getElementById('speedValue');
+        const sizeValueElement = document.getElementById('sizeValue');
+
+        let speed = parseInt(speedElement.value);
+        let size = parseInt(sizeElement.value);
+        let index = 0;
+
+        speedElement.addEventListener('input', () => {
+            speed = parseInt(speedElement.value);
+            speedValueElement.textContent = speed;
+        });
+
+        sizeElement.addEventListener('input', () => {
+            size = parseInt(sizeElement.value);
+            sizeValueElement.textContent = size;
+            outputElement.style.fontSize = size + 'px';
+        });
+
+        function typeText() {
+            // Use innerHTML instead of textContent to render HTML tags
+            outputElement.innerHTML += textToType[index];
+            index++;
+
+            if (index < textToType.length) {
+                setTimeout(typeText, 1000 / speed);
+            }
+        }
+
+        function changeColors(bgColor, textColor) {
+            document.body.style.backgroundColor = bgColor;
+            document.body.style.color = textColor;
+        }
+
+        typeText();
+    </script>
+</body>
+</html>
