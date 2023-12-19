@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slow Type Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            transition: background-color 0.5s, color 0.5s;
+		background-color: black; /* Set the default background color to black */
+            color: white; /* Set the default text color to white */
+        }
+
+        #output {
+            white-space: pre-line;
+            font-family: monospace;
+            font-size: 18px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        #controls {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        #speedControl, #sizeControl {
+            margin-bottom: 10px;
+        }
+
+        .colorButton {
+            cursor: pointer;
+            padding: 10px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        #blackWhiteBtn {
+            background-color: black;
+            color: white;
+        }
+
+        #whiteBlackBtn {
+            background-color: white;
+            color: black;
+        }
+
+        #blackGreenBtn {
+            background-color: black;
+            color: #39FF14; /* Neon green color */
+        }
+
+	#beigeBrownBtn {
+		background-color: #F5F5DC;
+		color: brown
+}
+    </style>
+</head>
+<body>
+
+    <div id="controls">
+        <label for="speedControl">Speed:</label>
+        <input type="range" id="speedControl" min="1" max="100" value="32">
+        <span id="speedValue">5</span>
+
+        <br>
+
+        <label for="sizeControl">Text Size:</label>
+        <input type="range" id="sizeControl" min="10" max="30" value="18">
+        <span id="sizeValue">18</span>
+    </div>
+
+
+    <div>
+        <button class="colorButton" id="blackWhiteBtn" onclick="changeColors('black', 'white')">Black Background, White Text</button>
+        <button class="colorButton" id="blackGreenBtn" onclick="changeColors('black', '#39FF14')">Black Background, Neon Green Text</button>
+ <button class="colorButton" id="whiteBlackBtn" onclick="changeColors('white', 'black')">White Background, Black Text</button>
+	<button class="colorButton" id="beigeBrownBtn" onclick="changeColors('#F5F5DC', 'brown')">Beige Background, Brown Text</button>
+    </div>
+ <br>
+    <div id="output"></div>
+ <br>
+ <div>
+    <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom1.html'">chapter 1.</button>
+    <button class="colorButton" id="whiteBlackBtn" onclick="location.href="gloom2.html'">chapter 2.</button>
+    <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom3.html'">chapter 3.</button>
+</div>
+ <br>
+      <script>
+        const textToType = `
+            “You’ve never taken gloom. Why is that?" 
+            The night yawned. It was almost audible; the stretching of the sky was the twang of rubber bands and it was the clicking rattling of trees whispered strange songs by the transient wind, the violets of the sunset screaming, churning, and the grains of the beach grinding underfoot. I kept my gaze firmly fixed on my fingertips as the palms of my hands bloomed and shook. To any other eyes, my hands and fingertips looked normal. To my eyes alone, the very tip of each finger shivered and shook, corrupted, bifurcated endlessly; flickers of skin sliding in and out of existence like a hot knife gliding through butter. I’d taken my gloves off, and they laid discarded on the floor, used, abandoned, empty. 
+That was dangerous. Being with my friends like this? Dangerous. Keeping my hands exposed? Dangerous. 
+	My friend ruffled her fingers through my hair and I flinched, bolted upright. My fingers curled into fists. “Gabe, are you listening?” Naomi asked. “You’re always struggling with reality. I know that. So why haven’t you tried taking gloom?”
+	My eyes slid over, shuddering in their casings. “Never felt the need.” 
+That was an absurd, massive lie. I’d do anything to escape from reality. Under a scent-filled, lustrous sky where fear and woe crept into my soul and dashed through my chest on spiderweb thin wings to fizzle out through my extremities; where, namely, I had to focus firmly on the state of my thin and delicate fingers at all times— do not touch, do not corrupt, do not touch, do not corrupt— the escape promised by the long, fibrous black tube of gloom held precariously between her soft lips held tantalising appeal.
+	“Give it a try,” she whispered, and the blush of her lips and the freckles of her cheeks intensified, “Just this once.” She leaned in, the warmth and thin scent of her wrapping around me and making me weak— and my heart nearly stopped. Laughing, she took two fingers and took the gloom stick between them, slid the gloomstick out of those pretty lips and held it up to mine. With her above me, the fingertips of one hand dangerously close to mine, her hair falling around me in a cascade, I gently leaned my head forward and bit the gloom stick between my teeth. 
+It felt like a kiss. The warm glow of gloom blasted my senses with warmth and glow as the fibrous tendrils spidered their way into my mouth to expel a bloom of steam; I felt it diffuse into my organs, my skin, and she was there, and I gazed into her eyes, and her lips moved and so did mine. It wasn’t a kiss, but it felt like one. 
+And then my world intensified.
+	I don’t know what I did that night. For the past twenty-odd years I’d paid special attention to where my hands were and how they moved; the state of my gloves, those hollow, soulless things, and the environment blooming inside them; carefully monitoring for any tear in the fabric; checking how long it had been since I’d discharged my corruption… you get the idea.
+	Gloom hit my system like a ton of bricks and I laid down, gently curling up like a resurrection plant then stretching out and relaxing as if filled with water; a flower drying up and then blooming with life. Her laugh was a cacophony of laughs, all beautiful, all at once, and she laid down next to me. I glanced at her and her face shifted and moved and shaded purple; her smile was seven smiles that manoeuvred rapidly around her face.
+	And then it was just her, and I loved her.
+	
+I don’t know what happened next.
+	Then we were in a silver Jeep crashing down the beach, and the world was normal; except the stars manoeuvred in spots of rainbow glow in the sky, stretching and spinning and shooting down like falling comets.
+	Silence.
+
+And then we were dancing in the water, and God was it hard to swim. I felt a zap below; I looked and saw a fish ignite into a white-blue flame, expelling puffs of smoke that bloomed through the water, unhampered, before expelling into the crimson night air.
+	It must have brushed my fingertips, I thought but then my thought expelled itself into infinite smallness and was replaced with another, a large concrete slab crashing down. I glanced at Naomi, her body pressed close to mine, and my fingertips dancing angrily and pulsing as they dug into her back—
+	Dangerous, I thought gloomily before the thought exploded into fireworks that scribbled and twisted all over me like the swaying branches of a weeping willow.
+	
+My eyes blinked open as I awoke. Sunlight drifted in through the window, carrying dancing dust that breathed in the chilly summer air; my delusions, usually strong, had hampered down. The gloom was gone: it must have taken some of the intensity when it rushed away, a maiden cackling in the night and leaving as suddenly as she slammed down on the bed.
+	I held my hand up to my face, and gazed happily at the lack of corruption in my fingertips. Here and there, a tiny spec— like a dead pixel pixels on a television screen— wormed in and out of the surface of my palm, exposing a bright shine of green— but it so much less than the usual gnarled, twisted corruption branching out of my skin like so many trees bursting from a swamp. 
+	Horror struck me nearly as hard as the gloom as I realised where my other arm was. Naomi was breathing steadily, and my hand was trapped under her, touching bare skin. I swore vehemently under my breath at that beautiful, sun-licked hair of hers, those sharp shoulders rising and falling.
+	She made me do it, I thought venomously. She made me take that gloomstick. Whatever happened to her is her fault. 
+I turned away. No… I submitted. She was over me— I reached my teeth out to grab it into my jaw, taking those spiralling tendrils and the resulting sweet bitter stinging puff. Gently, I wrestled my hand out from under her. She was breathing heavily— whatever I’d changed in her wasn’t fatal. On my way out, my fingertips glanced across the surface of her skin, and I felt a jolt of panic as pixel-like corruption marks flipped in and out of her skin, receded, vanished. Her breath froze once then rasped, resumed— Naomi was either asleep or pretending to be.
+	Whatever my fingertips had done to her, sleep couldn’t hurt her recovery. She needed to rest. I pushed myself away from her, turning my back to that pale, delicate creature; slipped on my shoes and pushed myself off the bed. If it wasn’t for the circumstances, I would have been pleased with the low levels of corruption in my fingertips. If I went too long building up corruption without discharging energy—
+	As a child I remember my hands burning, melting, as molten red tears leaked down my cheeks as rivers of magma and leaving snaky streaks of ash as my house was encased in a shimmery translucent bubble full of screams and explosions. 
+	Terrible, terrible things happened when I didn’t discharge my corruption. Memories rocketed down on my head like the dwindling trails of long-gone fireworks. I wandered over to the sink to clean up for the day. I reached for my white velvet gloves and swore as I realised I’d left them on the beach the night before on the sitting rocks with Naomi and my friends before I took gloom. I’d have to go back and get them today. I reached into a box of disposable gloves and slipped on two rubbery white latex gloves— these would have to do for now. 
+Two ungloved, delicate white hands wrapped themselves around my naked chest as Naomi rested her head on my back. “Hey honey,” she murmured, and I bolted upright, standing rigid for a moment before calming down and feeling her warmth lay softly against me.
+	“Hey Naomi,” I mumbled sleepily, and she joined me in front of the mirror. This was the moment of truth. What kind of corruption did she get? I felt my breath hitch in my chest as she played with her hair, moving it out of the way of her eyes and then glancing sidelong at me. She seemed fine. That was until her eyes kept sliding left like the spinning numbers of a slot machine, whirling through nine irises before settling down with orange ones to face me. That's a benign corruption, I thought to myself with a sigh of relief. She’ll be fine.
+ I opened my mouth to say so but clamped my jaw down tighter than a vise when I saw Naomi staring into the mirror, fingers gripping the sink. “Make it stop!” She exclaimed, “Oh God, Gabe, make it stop!” Her hands left the sink and dug into her hair, spidering into the crooked fibres. Her eyes were spinning, spinning faster, slot machines in endless motion to settle to two slotted eyes with smeared pupils. She dashed her hand across the sink and it slapped a handheld mirror to streak against the floor, the green glass fragments shattering and shivering and spiralling off to squiggle into distant fates.
+	“Gabe!” she howled in horror and clung onto me, beating her fists against my chest. “Fix it Gabe, fix it! Oh God, you can’t fix it, what can I do?!”
+	“Naomi,” I murmured, pressing her to me, “It’s going to be alright. It’s gonna be okay.” And I held her as she sobbed against my chest, her clenching my skin close to her like it was a loose bag as I rubbed her back. When she looked up, I was holding a pair of shimmery sunglasses, the arm held daintily between two fingers. The glasses were stylish— the front eyepieces merged into a rectangle with a triangular cut-out for the nose. They shimmered blue and black in the limelight of life, and most importantly, they were thick. Very thick, almost opaque ino order to cover her slot-machine eyes.
+	She saw these and sobbed harder, then composed herself, sniffled, and let me slide them onto her skull. Her eyes were hidden completely. “Well,” she said, trembling, “if you can do it, so can I.” She shivered and I pulled her against me. “But I hate the feeling of it,” she murmured, “When they spin too fast. I know there’s some machine behind my eyes, flipping and turning and changing those pupils with some ungodly, unknown mechanism— oh god, Gabe, I just can’t stand it.”
+	“I know,” I whispered, and I ran my gloved fingertips through the hair that fell in curtains over her snakelike eyes. “I know. It’s going to be okay.”
+	But it wasn’t.
+	
+We pulled up in the same car as the night before— Naomi had crashed it into a downturn in the yard, and one headlight was shattered, the other smothered by a bramble-coated bush that engulfed it in greedy, exploring and dancing hooked vines that cling and gripped tight like barbed wire.
+	The Jeep shuddered to a halt, creaking and baking in the afternoon summer sun. That shattered light dulled down with its sister, its gaze shutting down for one last time.
+	I sidled down to the rock with Naomi, and she put one knee up on the rock, staring down at me with those multi-coloured eyes masked by sun-streaked silver. I searched the rolling dunes, scanned the beach for the direction the playful wind had scattered my prize. And then I saw it, each glove flopping limply like some discarded thing but screaming and glowing each time the wind teased open its lips. I bent down and picked them up, the wind torn fabric settling yearningly in my hand. The wilderness inside each glove screamed and yawled; I tore the stretched silicone of my temporary gloves, crushed the remnants into a wadded ball in my fist. When I eased open my fingertips, I watched a dove appear with a shining glow and take a beautiful, unhindered flight.
+	I slipped on my gloves from the night of gloom and looked to Naomi. But she was gone.
+	Instead she stood at the lapping shore, back facing me. In the silence broken only by cawing seagulls, she muttered “I can’t take it, Gabe. I really can’t, not seeing the world like this. Not this.”
+	“It’s going to be fine,” I repeated uselessly. 
+	She took a step into the water, and then another, and another.
+`
+
+        const outputElement = document.getElementById('output');
+        const speedElement = document.getElementById('speedControl');
+        const sizeElement = document.getElementById('sizeControl');
+        const speedValueElement = document.getElementById('speedValue');
+        const sizeValueElement = document.getElementById('sizeValue');
+
+        let speed = parseInt(speedElement.value);
+        let size = parseInt(sizeElement.value);
+        let index = 0;
+
+        speedElement.addEventListener('input', () => {
+            speed = parseInt(speedElement.value);
+            speedValueElement.textContent = speed;
+        });
+
+        sizeElement.addEventListener('input', () => {
+            size = parseInt(sizeElement.value);
+            sizeValueElement.textContent = size;
+            outputElement.style.fontSize = size + 'px';
+        });
+
+        function typeText() {
+            // Use innerHTML instead of textContent to render HTML tags
+            outputElement.innerHTML += textToType[index];
+            index++;
+
+            if (index < textToType.length) {
+                setTimeout(typeText, 1000 / speed);
+            }
+        }
+
+        function changeColors(bgColor, textColor) {
+            document.body.style.backgroundColor = bgColor;
+            document.body.style.color = textColor;
+        }
+
+        typeText();
+    </script>
+</body>
+</html>
