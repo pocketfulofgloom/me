@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slow Type Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            transition: background-color 0.5s, color 0.5s;
+		background-color: black; /* Set the default background color to black */
+            color: white; /* Set the default text color to white */
+        }
+
+        #output {
+            white-space: pre-line;
+            font-family: monospace;
+            font-size: 18px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        #controls {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        #speedControl, #sizeControl {
+            margin-bottom: 10px;
+        }
+
+        .colorButton {
+            cursor: pointer;
+            padding: 10px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        #blackWhiteBtn {
+            background-color: black;
+            color: white;
+        }
+
+        #whiteBlackBtn {
+            background-color: white;
+            color: black;
+        }
+
+        #blackGreenBtn {
+            background-color: black;
+            color: #39FF14; /* Neon green color */
+        }
+
+	#beigeBrownBtn {
+		background-color: #F5F5DC;
+		color: brown
+}
+    </style>
+</head>
+<body>
+
+    <div id="controls">
+        <label for="speedControl">Speed:</label>
+        <input type="range" id="speedControl" min="1" max="100" value="32">
+        <span id="speedValue">5</span>
+
+        <br>
+
+        <label for="sizeControl">Text Size:</label>
+        <input type="range" id="sizeControl" min="10" max="30" value="18">
+        <span id="sizeValue">18</span>
+    </div>
+
+
+    <div>
+        <button class="colorButton" id="blackWhiteBtn" onclick="changeColors('black', 'white')">Black Background, White Text</button>
+        <button class="colorButton" id="blackGreenBtn" onclick="changeColors('black', '#39FF14')">Black Background, Neon Green Text</button>
+ <button class="colorButton" id="whiteBlackBtn" onclick="changeColors('white', 'black')">White Background, Black Text</button>
+	<button class="colorButton" id="beigeBrownBtn" onclick="changeColors('#F5F5DC', 'brown')">Beige Background, Brown Text</button>
+    </div>
+ <br>
+    <div id="output"></div>
+ <br>
+ <div>
+	  <button class="colorButton" id="whiteBlackBtn" onclick="location.href='index.html'">main.</button>
+    <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom1.html'">chapter 1.</button>
+    <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom2.html'">chapter 2.</button>
+	     <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom3.html'">chapter 3.</button>
+     <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom4.html'">chapter 4.</button>
+    <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom5.html'">chapter 5.</button>
+	     <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom6.html'">chapter 6.</button>
+     <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom7.html'">chapter 7.</button>
+    <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom8.html'">chapter 8.</button>
+	     <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom9.html'">chapter 9.</button>
+</div>
+      <script>
+        const textToType = `
+PART III: NAOMI THE DEALER
+
+A glass rammed down on the bar table. Beer rushed up with rolling mirth and spilled over, frothing warm bubbles glittering as lamplit diamonds over the gleaming wood.
+“I want whatever she’s on!” a strapping voice bawled. Naomi stood crookedly at the centre of the room, frothed at the lips, her eyes zipping wildly to the left in a cascade of glowing colours. She stumbled, crashing into the table. A bag dropped to the floor, exploding open into a pool of glimmering powder.
+She bent over, feral, and from an unzipped pocket a river of gloom carts dribbled to the floor with a tinkle. Naomi swooned, scooped the glittering powder up, let the grains fall through her fingers and grinned up at them.“Twenty bucks per pound,” she mumbled giddily.
+
+
+4 // THE MOON AND THE SUN
+
+The cerebral wash broke against the cranial beachside, licking up against the peachy surface to glint and crashing in a million ephemeral echoes. 
+Naomi stared up, hawk-eyed, at the fraying cerebral forest, disgust rocketing through her features as that saline wind whistled hum thrummed against her ear drum. A seagull cawed, cawed. 
+
+The moon was a beautiful thing. That crooked sphere rolled her rugged surface, scraped into the void and dug a shovelhead into the stars. She folded them up, pulled them in a flowing blanket to wrap around herself to shroud all in void but a gleaming crescent. 
+And sent from the sun, golden beams warped and scattered from pinprick stars to cut against the moon’s dusty surface, teasing out her pockmarks and craters with beautiful arcs of silvery light; their lustre illuminated every last grain of dust and minute imperfection and footprint, excavating a sunken beauty. 
+Today, but not always, the moon despised the sun. Though the sun cast the moon in such a warm and glimmering light, she was utterly goddamn infuriating. The sun, while imperfect, burned so bright that none of her blemishes were visible to the eye. The sun was soft, warm, beloved; she was craved, needed and desired.  
+
+Yet the sun didn’t have a fucking personality, she thought to herself. The moon– now that has a personality.  
+Just from an objective perspective, sane-phase Naomi thought as she stared into the cranial void, the moon is better. The moon is an aching pulse, a melancholy song plucked on quivering steel strings by delicate fingers on a lonely night– it’s the lack, the cold captured in the fading embers of a fireplace long dead. It’s the damaged beauty of a schoolhouse half-burnt, preserved by loving hands, rebuilt and self-denying. It has a personality, a history; it’s lonesome but loved, whole but asunder. 
+Naomi frowned, rubbed her knees together to scatter cranial dust. She sat alone on the sands of her brain, the frothing pink waves of the cerebral sea lapping over her toes in rivulets, seethed into the grey matter. Sane Naomi dug her fingertips tightly into the blushing pink below, knives sluicing butter; a pale glow gleamed over her and illuminated her with pale overtones.  She pushed her feet into that pink cerebral sand and it pressed in slightly, softened. Sane-Naomi gazed into the caverns of her skull and the spider web starscape of faint and distant arachnoid mater spindling across it. 
+Her gaze rose, narrowed. She wasn’t truly alone here. Hanging in the darkness of the Band-Aid pill forest shimmered a massive white orb of light. That hated cerebral sun illuminated the silhouette of another girl– psycho-phase Naom dangling from the bandages. She was active right now, tangled up in the Band-Aid pills and her eyes glued to that sun, seeing nothing of their inner world. 
+If Sane-Naomi focused on the dazzling sphere of the circadian sun, she could see vaguely into the room that their shared body stood. As she stared into that glowing orb, she watched the world in the living room snap by in blurry, grainy flashes, blurs and still frames:
+
+Naomi settled down on the couch with Gabe and curled up against him. She stared into his eyes and took a long draw of a fuschia gloomstick, and his arm twitched over her shoulders instinctively, velvet fingers drifting lazily.
+
+The bitch needs to fucking let me go, Sane-Naomi thought. She slipped a trembling hand into her pocket, pulled out a cigarette and lit it, trembling. Why does she get to have control? What does she have that I don’t?  
+Sane-Naomi watched Psycho-Naomi and Gabe; frustrated, she kicked the sands, pushed to her feet and began to pace the cerebral beach, her lips outpouring a long stream of paper-white smoke to choke her neurons to death. Why the fuck is this happening to me? Why is any of this happening to me?
+And squinting, she saw:
+ 
+I took the gloomstick from between Naomi’s fingers, took a draw.  My world bloomed, shuddered and swam.
+It hit me like a racehorse.My veins dilated, throbbed in my velvet gloves, and my pupils wobbled, jittered, fixated; I released a hot breath to collect dewdrops on Naomi’s cheek, ran my fingertips across her cheekbone and through her hair.
+She felt the corruption jagging and itching under those gloves, growing with pressure. Gabe lowered his hands, his fingertips found her fingertips and gently dragged across them. The pressure intensified, pulling her to him. She felt deeper yearning, crumpled closer. His fingers locked, vicelike, around her wrists. She parted her lips softly and leaned in to brush gently against his neck, and as his fingers twitched she freed her fingertips, lacing them through his hair. She locked her lips to his neck, applied pressure. He made a shocked noise as electric spiders skittered out from that point of contact and raked his fingers up her back and trailed back down, heated spiderwebs. She sidled closer and pressed against him.
+
+Stop! Sane-Naomi thought. She shoved her eyes tight, pressed her fingers into her eyelids until she saw patterns and they ached, gripped her hair and tugged red hot wires out. I can’t fucking watch this. I just can’t stand to watch this! 
+Her fists clenched. Snarling, she took to motion, shoes digging in tight to that hard spongy surface and pushing off hard. She ran down the sand and leapt into the air.
+She hung, cascaded against that glowing light. 
+
+The moon was envious of the sun, jealous of its thoughtless glow. It wanted to shine and shine alone without the touch of a hated foe. Fuck being lit by someone else. It grimaced, pulled the tides, pushed deeper.  
+
+Gabe’s lips parted and hot breath flowed out in beats. A million flowers blossomed, red petals unfurling and drifting in the wind. Gloved fingertips glided up Naomi’s arm gently, explored the curves and dips of her, slid up and traced her jaw, pressed to her neck and tightened. He turned her head, leaned in deeper, pressed his lips to her neck. The room beat, pulsed, blurred.
+
+Sane-Naomi’s fingers brushed against the fibres of the band-aid pill and yanked, pulled tight. Swinging queasily, she grunted, pulled her legs up and locked onto the elastic. Then she began to climb. She’d done this again and again, ever since she had materialised on the cerebral plain. She wasn’t sure what had fucking possessed her brain to create separate avatars for her and her psychotic counterpart. But ever since it had, she’d furiously climbed the Band-Aid tangle. It was a habit, a repetition, maybe thoughtlessly burnt into her like a damaged circuit. 
+Maybe this time. Maybe…
+Naomi climbed those elastic bandages, pulling herself higher and higher as if on a jungle gym or a flexible ladder. It’s my turn, Naomi thought. Her fingertips brushed against the psychotic girl’s ankle. It’s my fucking turn to shine. Her cold hands coolly clamped clawlike around it, dug in tight, fingernails burning and aching and throbbing. 
+
+The moon was great. But it despised the sun.
+
+There was too much between them. She was pressed tight to him, moving.
+Gabe wished this feeling would never end as he ached and his gloved fingers deftly unbuttoned and tossed aside fabric and–
+
+The sun illuminated Sane-Naomi tugging at that silhouette of another Naomi, a Naomi without hatred, without awareness, a Naomi without spite or anything else harsh. Without a memory and without a thought, she hung loosely there in the wrapping strands of the bandage forest, unresponsive. 
+“Let me back in,” Sane-Naomi seethed. “You’ve had E-fucking-nough of me. Enough of my life. Enough of my time. Enough of Gabe! Enough of my food, of my sunshine, of my exercise! Hell, enough of my work! Enough of Ren, of my friends, of everything. You’ve had enough of me! Just fucking let me go!”
+Sane-Naomi, simmered. “I can’t even remember half the things you do. Who knows what the fuck the others think of me with you in here! Hell, you’ve taken away half of my own memories!”
+A laughing glow of something she should barely remember hurtled through her mind, blurred and faded. Two dark silhouettes reached through a blue-grey fog, withered, eluded her.  Whatever! Fuck it! You’ve had enough. Now let me fucking take control! The wind of night roared and yanked at the sun. This was futile.  The golden molten orb refused to set, sitting in a throne of stars in a black paradise, waiting patiently for the hour of change and laughing with a billion waves.
+
+Non-Psycho Naomi slackened, gave up. Her face fell and she gazed down hopelessly into that dark pink sea.
+Snap!
+Sane-Naomi saw it coming out of the corner of her eye. The black silhouette of a bandage swung at her. Tensing, her teeth clenched, she was bludgeoned aside by a bandaid pill’s arm, soared through the air. 
+The world seemed to grind to a halt, go still. Then she crashed to the fauna of blushing capillaries. Bruised, battered, she laid there. Her nose dripped as she stared up into that flickering orb.
+
+Sweat dripped down in shimmering globules to nick the line of Gabe’s chin. They were infinitely entangled, heat and warmth and blasting out and back and crystalline colours snapping and blurring and shaking all around them. The room throbbed and beat and pulsed to the rhythm of a song that nobody but them could understand. They didn’t know where it came from as they moved and ached and the song tinkled faster. It told a story, aching and roaring– of children born and hurt and killed; of families cast into a cruel and harried reality– of sweat-slicked hunters easing back bow strings with fixed experience to snap arrows with a jolt deep into the world to snap and embed into the heart of deer; the hunter’s ache, their collapse. The story was coming to an end, increasing in speed and intensity and beauty, a run to action, an endless journey into the sun and the blackness and calm that lay beyond it.
+With a gasp, Naomi felt herself slip from her body in vibrating, beating wavelengths. She felt herself cascade and gleam across the universe in a hundred shattered dreams, dancing glittering slithering and spiralling down. She saw a planet and it was insanely beautiful and it all became too much for her and euphoria peaked, spilled over, and the planet glowed with life and crumbled, exploding into the night. Their breaths were entangled, linked.
+
+Giving up, Sane Naomi averted her eyes. Time passed with aching slowness, ticking on a clock winding down.  I fucking hate this! Non-psychotic Naomi thought to herself. I can’t control anything. Not my life, not my love. Not even my fucking body. She began to sob, pressing her fingers firmly into her hair as things she didn’t want to see splayed in glowing corners before her eyes.
+ 
+It was over.
+	 Fingers traced freckles and made heated constellations burn and sear bright with stabbing heat as they passed, calmed. The blaring of the room faded down, becoming muted glows and shaking sounds as the pores in the walls gaped and glowed and stretched, dragged against one another.
+Gabe released racing breath, his pulse slowed, stared down into her slot machine eyes as they glowed and melted down. Naomi’s warm form blurred calmly into a billion violet smudges as angelic sounds bled from her lips– the things she said were things that neither of them would ever remember.
+Gently, they relaxed into each other's embrace.
+ 
+The Band-Aid flags snapped and rustled. 
+Naomi watched herself cuddle warmly against Gabe’s frame radiating heat, his loving gaze melting into his eyes then burying his head into her sweet soft locks.
+You don’t get to do that. She stared, shaking. The gears in her head clanked, skipped, ground, tearing scrap metal, twisting it to glinting shards, dropping down to sink in and bite and bleed. You don’t get to. The glowing orb that was the sun dimmed as Naomi’s eyes shut. I can’t fucking stand this anymore. 
+
+Outside the living room, footsteps cycled down. They scraped, scraped, scraped by and then froze, made a vague, startled note. Whether it was a laugh, a noise of knowing disapproval, or a stare of jealousy she couldn’t tell– in other words, was it Stuart, Alyssa, or Ren? 
+There was a flick, the warmth relaxed, and the lights behind her eyelids died.
+
+The skull was void. Someone, God knew who, dragged a blanket across their shared body and it settled and prickled, warmed them. Hung by a million outstretched arms of nylon, Psychotic Naomi dreamed. 
+Sane-Naomi stared into the empty darkness, traced patterns into the cerebral sands. Twelve hours or so to go. The sea lapped fuschia, sank into its own infinite swell, drenched in the darkness of night. She glared at Psycho-Naomi as she swung unconscious, tangled in bandages that hung her over the cerebral sea. Sane Naomi hated that psychotic bitch who shone brighter than herself.
+
+That was why the moon despised the sun. 
+
+`
+
+        const outputElement = document.getElementById('output');
+        const speedElement = document.getElementById('speedControl');
+        const sizeElement = document.getElementById('sizeControl');
+        const speedValueElement = document.getElementById('speedValue');
+        const sizeValueElement = document.getElementById('sizeValue');
+
+        let speed = parseInt(speedElement.value);
+        let size = parseInt(sizeElement.value);
+        let index = 0;
+
+        speedElement.addEventListener('input', () => {
+            speed = parseInt(speedElement.value);
+            speedValueElement.textContent = speed;
+        });
+
+        sizeElement.addEventListener('input', () => {
+            size = parseInt(sizeElement.value);
+            sizeValueElement.textContent = size;
+            outputElement.style.fontSize = size + 'px';
+        });
+
+        function typeText() {
+            // Use innerHTML instead of textContent to render HTML tags
+            outputElement.innerHTML += textToType[index];
+            index++;
+
+            if (index < textToType.length) {
+                setTimeout(typeText, 1000 / speed);
+            }
+        }
+
+        function changeColors(bgColor, textColor) {
+            document.body.style.backgroundColor = bgColor;
+            document.body.style.color = textColor;
+        }
+
+        typeText();
+    </script>
+</body>
+</html>
