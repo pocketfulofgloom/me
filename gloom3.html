@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slow Type Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            transition: background-color 0.5s, color 0.5s;
+		background-color: black; /* Set the default background color to black */
+            color: white; /* Set the default text color to white */
+        }
+
+        #output {
+            white-space: pre-line;
+            font-family: monospace;
+            font-size: 18px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        #controls {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        #speedControl, #sizeControl {
+            margin-bottom: 10px;
+        }
+
+        .colorButton {
+            cursor: pointer;
+            padding: 10px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        #blackWhiteBtn {
+            background-color: black;
+            color: white;
+        }
+
+        #whiteBlackBtn {
+            background-color: white;
+            color: black;
+        }
+
+        #blackGreenBtn {
+            background-color: black;
+            color: #39FF14; /* Neon green color */
+        }
+
+	#beigeBrownBtn {
+		background-color: #F5F5DC;
+		color: brown
+}
+    </style>
+</head>
+<body>
+
+    <div id="controls">
+        <label for="speedControl">Speed:</label>
+        <input type="range" id="speedControl" min="1" max="100" value="32">
+        <span id="speedValue">5</span>
+
+        <br>
+
+        <label for="sizeControl">Text Size:</label>
+        <input type="range" id="sizeControl" min="10" max="30" value="18">
+        <span id="sizeValue">18</span>
+    </div>
+
+
+    <div>
+        <button class="colorButton" id="blackWhiteBtn" onclick="changeColors('black', 'white')">Black Background, White Text</button>
+        <button class="colorButton" id="blackGreenBtn" onclick="changeColors('black', '#39FF14')">Black Background, Neon Green Text</button>
+ <button class="colorButton" id="whiteBlackBtn" onclick="changeColors('white', 'black')">White Background, Black Text</button>
+	<button class="colorButton" id="beigeBrownBtn" onclick="changeColors('#F5F5DC', 'brown')">Beige Background, Brown Text</button>
+    </div>
+ <br>
+    <div id="output"></div>
+ <br>
+ <div>
+	  <button class="colorButton" id="whiteBlackBtn" onclick="location.href='index.html'">main.</button>
+    <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom1.html'">chapter 1.</button>
+    <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom2.html'">chapter 2.</button>
+	     <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom3.html'">chapter 3.</button>
+</div>
+      <script>
+        const textToType = `
+3 // ON A CEREBRAL BEACH
+ 
+There were many aspects to a beach. There was the frothy golden foam, sun-slicked, that lapped glimmeringly across torrid blue waves, foamy bubbles glinting like so many splintered shards of glass below a sky full of a billion fluffy clouds, each flashing distinctly to the eye. There were waves that crashed rhythmically against the fluid sand to spew grains to whorl in the ocean’s depths. In the sand were rooted green dune grasses that unfurled below a flag flapping on a metal pole.
+	Perhaps, on one particular beach, the foam was pink. It rode a languidly rolling cerebral sea that lapped across the blooming capillaries of the shore. Oh, those capillaries, deeply rooted in Naomi’s brain, exploded and pulsed with vibrant perspicacity. The band aid pill was snapping, twisting and wrenching, stretched over those deep wrinkled crevices and squiggling like a flag flapping in a summer gale.
+	Wrap, wrap, unfurl. Wrap, wrap, unfurl.
+	This was the beach where a sane girl drowned. 
+	After some time the Band-Aid pill snapped off of the brain with great recoil; it danced in the air, drifted idly across a sea of cerebral fluid, waiting, waiting. Then it settled once again to the shore where capillaries bloomed like moonflowers in the midnight hour. Hours passed, waiting.
+	
+Naomi fell over, fell silently, dazed to slump against the wooden floorboards. They creaked slightly, settling with her weight. Droplets of sweat beaded up on her back and trembled, bearing tiny glass reflections of the room then dribbling down to dot the parched wood with dark blots.
+	Did it work? I quaked in my skin, muscles cold and fibrous, riveted like coiled springs. I slipped my glove on. My bones felt hollow, ached with strange bruising. All I remember is replaying the memory of Lawson. Did my fingertips make contact?
+	I shivered fearfully, pulling my knees into myself. Stuart’s stare, previously solemn and fixed, had begun to waver; his lip trembled. That burly statue’s composure was scattered— his clenched fists all but shuddered. He looked like he was about to scream. 
+	I dared to meet his eyes. They locked with mine, enraged, and a sturdy boulder fist ground into my jaw. I felt tendons bound and snap back into place. I rose to my feet in shock, and my rubber body stumbled back on its own accord. Before I knew it my head slammed to the floor. Silence, then a jarring pain and buzzing in my ears; the world swayed, confused by its own existence, and flopped me over and over again.
+	
+My eyelids fluttered and I tried to open them. Through excessive effort I managed to grind those stone gates open to piercing light; through bludgeoning red and black clouds I saw a still furious Stuart panting. As he took a thundering step towards me, his giant foot slammed to reverberate a million little shockwaves. that would crumble mountains, causing avalanches to bury my tender head. I knew that giant would pummel me into tinier and tinier pieces, into nothing.
+	Then Stuart froze into a stoic stone statue. Naomi had moved.
+	Naomi!
+	My head ached, eyes bleary. I felt my engines crackle with fuel and my heartbeat sang, started to chug along and spin internal cogs. I dragged myself to my hands and knees. 
+	Naomi began to shake and froth at the mouth. Stuart crouched over Naomi and lifted her head off the floor. I pushed myself over, dizzy, and stopped on my knees next to her. Stuart, animated, cursed at me and dropped her head in my lap.
+	“Hey,” Naomi said. Hope flashed across my face and glowed in my chest.
+	“Naomi,” I replied, warmth running through me.
+	She opened her mouth. Her soft lips parted.  “Who the hell are you?”
+	A dull, throbbing ache settled in my chest. My emotions went mute, and loss dragged the ache down into eternity, lower than I’d ever felt. 
+	“We’ve been friends for years,” I felt my knotted tongue form behind my deadened lips, “I know you like a sister. I’m in love with you, or at least I think I am. You’re my best friend.” 
+	Instead, I lifted the impossible weight of my tongue and said, “I’m the boy who ruined your life.” 
+Naomi frowned and seemed to notice the glasses resting crookedly on her nose. She raised a delicate finger to that shimmering shape. I felt bile rising in my throat, dropped her head to the floor with a dull thud and stumbled to the bathroom. I reached the toilet and started to hurl. Bile stung my throat with razor sharp claws as those uniform ceramic walls were splattered and marred with puke. With each heaving movement of my body I felt guilt tug up, up, rolling my muscles like a slithering snake’s coils. I quaked and shuddered as I hurt again and again. 
+	She forgot me. Everything we’ve ever been, everything I’ve been to her, gone from her memory the moment my fingertips touched her back.
+	Lawson laughed in an open field of dandelions as sunlight basked down on her. She danced with warm, languid movements.
+	“Who the hell are you?” she said and her lips were Naomi’s soft sculpted lips.
+
+I felt like I was leaving my body. My vision hummed, sprayed, blurred with motion. I watched as the rough porous surface of the wall started to move, flow and spread, each pore dancing. I sobbed, dry heaving raspily, in a sea of crystalline memories like shards of a broken mirror.
+	Behind me, the empty mirror frame was still fixed to the wall with jagged edges glittering pointily. There I hallucinated Naomi, her eyes filled with swirling pinks and yellows on a backdrop of blooming, endless swirling colour.
+	
+Naomi slid one delicate finger up to press her mirrored sunglasses up the freckled bridge of her nose. 
+	“That’s better,” she muttered and relaxed for a moment. She flicked her eyes to the right. There crouched Stuart, the burly, jolly man with hardened pebble eyes. To the left stood Ren, who Naomi regarded quickly then looked away.
+	“Naomi?” Ren asked cautiously, “do you want to sit up?”
+	“No,” she said flatly, staring straight ahead at Stuart’s unruly leg hair. He really ought to trim that, she thought to herself. “I’m good here.” 
+	“You’re sitting up,” Ren said definitively. Naomi’s lips tightened.
+	
+Naomi leaned against the kitchen wall, half hunched over like a wilted plant. Her delicate, chilled form laid there almost fetally, frigid, goosebumps rising on the skin of her arms to the heat of the room as cold air drew towards a fire to be rebirthed to flaming heat.
+	“Where is he?” Naomi finally asks. 
+	“Where is who?” Ren asked evasively.
+	“That boy who ruined my life.”
+	Ren’s lips trembled. They opened their mouth then shut it. They eased towards the bathroom.
+	
+Naomi was back, I thought to myself. But not the Naomi I called mine. My skull shook in my hands as I rocked there, mouth dripping acid. Liquid droplets of bile spun and fell, wobbling to splatter with force against the shimmering tile. The beads splayed out and scattered almost in slow motion, rippling across the bathroom floor.
+	There was a knock on the door.
+	“Gabe,” said Ren. Their voice carried a note of poorly repressed anger. “Naomi wants to see you.”
+	“Be right there,” I replied, wiping vomit away from my mouth with stained gloves. I swore at myself, stood up quickly, swallowed away that stinging fire and splashed water across my face.
+	“I’m here,” I murmured cautiously, easing out of the bathroom, and Naomi’s sweet sculpted face shifted slightly. Her eyes slid sidelong to train on me, and I saw dark irises behind the frame of her glasses— once again were her natural colour, gold-strung brown sinking into a vibrant dark pool.
+	So it really worked, I thought to myself. To this version of Naomi, the touch of my corruption never occurred.
+	“I don’t know you,” said Naomi, “But perhaps I’d like to.”
+	Ren made a barely stifled yelp of protest and left the room, scuttling like some rodent into the darkness.
+	Gazing into those placid lake eyes and counting the freckles on her glowing warm cheeks, I grew to know her again, just a little bit.
+	
+Night fell.
+	I felt it in the air. Some change in capacity, some pretence; perhaps a hormonal shift, electric. Naomi’s frail pale form shook, shuddered, and her eyes moved languidly under their heavy lids. They settled to regard the clock.
+	11:59:57
+	11:59:58
+	11:59:59
+	12:00:00
+	And to Naomi, everything was rainbows.
+	As the clock gonged, gonged, gonged, her eyes rolled left and spun and whirred with a glow like a casino’s electric hum. Naomi began to scream and quiver as her mind boiled.
+	The band-aid pill, with a heavy sigh, felt the clock within it change. It snapped and stretched and tightened again, constricting itself around that tired pink brain. Time to work. It gloomily pressed the hemispheres together tightly, perhaps too tightly, moodily hoping the corruption would direct it to laze in the cerebral sea again soon.
+	
+	
+In the end, we never fixed her.
+	On even days, Naomi was present, and she’d remember nothing of me save what she’d learned in the days since I’d changed her and reversed her clock. We’d come to figure that those lucid periods lasted almost exactly twenty four hours. 
+	On odd days, Naomi jolted into a deranged psychosis beyond anything prior seen as her eyes jolted into whirling rainbow oblivion.
+	“It has something to do with those damn band-aid pills,” Stuart said. I watched him, tremoring.  “Your corruption tangled itself up all up with the Band-Aid pill in her head,” he drawled. “Whatever the corruption did when it turned back the clock on Naomi– that change got applied in a different way to that Band-Aid pill still in her head. Gabe, the pills are supposed to last twenty four hours in your system— twelve hours of alleviated symptoms, six more hours until you’re safe to take another dose, and six hours past that until the Band-Aid dissolves entirely. Seems like your corruption changed the Band-Aid so that it rewinds back to a prior state the moment it dissolves into nothing. In this way, it can cling right to her brain all over again every time it dies.”
+	He scratches his head. “Now, that’s all just a theory. I’m delving into the realm of pseudoscience here. I don’t know why Naomi only gets them damn slot-machine eyes in her psychotic state, or why she gets a day of sanity and relief from the infernal devices stored behind those eyes between episodes. I suppose that’s something that we will never know.”
+
+`
+
+        const outputElement = document.getElementById('output');
+        const speedElement = document.getElementById('speedControl');
+        const sizeElement = document.getElementById('sizeControl');
+        const speedValueElement = document.getElementById('speedValue');
+        const sizeValueElement = document.getElementById('sizeValue');
+
+        let speed = parseInt(speedElement.value);
+        let size = parseInt(sizeElement.value);
+        let index = 0;
+
+        speedElement.addEventListener('input', () => {
+            speed = parseInt(speedElement.value);
+            speedValueElement.textContent = speed;
+        });
+
+        sizeElement.addEventListener('input', () => {
+            size = parseInt(sizeElement.value);
+            sizeValueElement.textContent = size;
+            outputElement.style.fontSize = size + 'px';
+        });
+
+        function typeText() {
+            // Use innerHTML instead of textContent to render HTML tags
+            outputElement.innerHTML += textToType[index];
+            index++;
+
+            if (index < textToType.length) {
+                setTimeout(typeText, 1000 / speed);
+            }
+        }
+
+        function changeColors(bgColor, textColor) {
+            document.body.style.backgroundColor = bgColor;
+            document.body.style.color = textColor;
+        }
+
+        typeText();
+    </script>
+</body>
+</html>
