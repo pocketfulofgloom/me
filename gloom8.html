@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slow Type Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            transition: background-color 0.5s, color 0.5s;
+		background-color: black; /* Set the default background color to black */
+            color: white; /* Set the default text color to white */
+        }
+
+        #output {
+            white-space: pre-line;
+            font-family: monospace;
+            font-size: 18px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        #controls {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        #speedControl, #sizeControl {
+            margin-bottom: 10px;
+        }
+
+        .colorButton {
+            cursor: pointer;
+            padding: 10px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        #blackWhiteBtn {
+            background-color: black;
+            color: white;
+        }
+
+        #whiteBlackBtn {
+            background-color: white;
+            color: black;
+        }
+
+        #blackGreenBtn {
+            background-color: black;
+            color: #39FF14; /* Neon green color */
+        }
+
+	#beigeBrownBtn {
+		background-color: #F5F5DC;
+		color: brown
+}
+    </style>
+</head>
+<body>
+
+    <div id="controls">
+        <label for="speedControl">Speed:</label>
+        <input type="range" id="speedControl" min="1" max="100" value="32">
+        <span id="speedValue">5</span>
+
+        <br>
+
+        <label for="sizeControl">Text Size:</label>
+        <input type="range" id="sizeControl" min="10" max="30" value="18">
+        <span id="sizeValue">18</span>
+    </div>
+
+
+    <div>
+        <button class="colorButton" id="blackWhiteBtn" onclick="changeColors('black', 'white')">Black Background, White Text</button>
+        <button class="colorButton" id="blackGreenBtn" onclick="changeColors('black', '#39FF14')">Black Background, Neon Green Text</button>
+ <button class="colorButton" id="whiteBlackBtn" onclick="changeColors('white', 'black')">White Background, Black Text</button>
+	<button class="colorButton" id="beigeBrownBtn" onclick="changeColors('#F5F5DC', 'brown')">Beige Background, Brown Text</button>
+    </div>
+ <br>
+    <div id="output"></div>
+ <br>
+ <div>
+	  <button class="colorButton" id="whiteBlackBtn" onclick="location.href='index.html'">main.</button>
+    <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom1.html'">chapter 1.</button>
+    <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom2.html'">chapter 2.</button>
+	     <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom3.html'">chapter 3.</button>
+     <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom4.html'">chapter 4.</button>
+    <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom5.html'">chapter 5.</button>
+	     <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom6.html'">chapter 6.</button>
+     <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom7.html'">chapter 7.</button>
+    <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom8.html'">chapter 8.</button>
+	     <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom9.html'">chapter 9.</button>
+</div>
+      <script>
+        const textToType = `
+8 // ALYSSA ARRIVES 
+ 
+The night crashed down. Lightning flashed in a webwork against the stars; the trees groaned, creaking hastily to bow to the god that was the wind’s screaming keel. The night bled down in rivulets and pinprick stars flowed in curtains to melt to the ground, dribbling and pouring into that spongy wet earth which thirsted.
+	A long silhouette walked with intent, leaned with perspicacity into the wind. Alyssa fought that billowing gale as it swung through blades of grass that stuck through the splintered porch. She hesitated at the peeling red-painted door, staring into the moons engraved into it. She felt deathly ill, close to collapsing. Part of it was the people that lived there; part of it was something else. Something in the jungle on her summer trip had gotten to her; some foreign bug, but she’d get through it. She always did. Alyssa was resilient. 
+She tore open the door and beams of ice-cold wind ripped through the whirlpool curls of her glimmering black hair to burst into the house. 
+	I froze, staring at her. She met my eyes immediately and I held them with a chill glare, fingertips thrumming on the vibrant red tablecloth as shadows flickered in the corners of the room. Alyssa moved her gaze around the room, mouth hanging slightly open as it always did when she contemplated. Her eyes caught on the catatonic Ren, stared at me. “Gabe?” she asked quietly, “What’s going on?” 
+	I felt my jaw lock, tighten, wire into place. I shook my head, willing that rising yearning feeling to fade from my throat, willed a beading, smearing coat of wetness to go away as it blurred my vision. 
+Alyssa slammed the door shut to mute the roaring night and hurried over. She hovered over the unconscious Ren, fidgeted, shook them awake. As their milky eyes blinked open, she relaxed and glared at me. 	
+Alyssa’s eyes were black as the brilliant night hung over the world outside. They glinted with intelligence, curiosity, and yearning in a constant search for mystery and its roots. Her face was melancholy-night dark and skillfully sculpted, her cheeks permanently flushed like twin solstice moons; her nose was prominent, beaked outwards on the bridge, extremely attractive on her face. Her resting expression was simultaneously inquisitive, judgmental and caring. At the moment, her face was made up and glittering with a million brilliant bright green diamonds– she looked like she’d been prepared to go to a rave. 
+Alyssa was the detective of the group, but she was flawed. Alyssa was prone to make immediate judgement based on her initial read of a situation– making her prone to error. Her first decision about anything was strong– whether that decision be morally right or wrong. This would be both a boon and a disadvantage in the future for us. Barring that, she was an excellent problem solver. Importantly, she was thoughtful in the after times– though she would come to initial conclusions about a situation quickly yet to be fair and equitable in re-evaluation. Given her habit of searching for answers, we’d all accepted the role of the thinker for her.
+I looked away from Alyssa, glanced at Ren. Ren’s eyes were dull, disingenuously fixed onto nothing; dismayed, disappointed, dead. Stuart, on the other hand, sat at the head of the table with the calmness of a boulder in a sea of grass, waiting. 
+	Time to tell them, Gabe. 
+The frosted glass crinkled in my mind and melted, rearranged; crystallised ice spread across those panes. The roses on the tablecloth swam fluidly around each other as if they drifted in some placid liquid, influenced by the slightest tap. The walls swum, any scrapes and dots becoming pronounced, drifting. Purple colours sparked and shook from the walls, and the room moved with a blurred purple hue as those purples flicked orange fires waving burning. I licked my lips, my parched, starving tongue, and yearned for a gloomstick to burn my worries away. I looked to the statue at the far end of the table for guidance, that stoic form gazing back. “Go ahead, Gabe,” Stuart said with infinite patience. His voice was grovelling but warm, a friendly giant. I needed that assurance; my nerves eased. 
+	“Since I was born,” I said, “I’ve had corruption in my fingertips. Everything that I touch changes in some way, distorts into something new, for better or for worse. Every so often I have to discharge that energy or the buildup creates an explosion of corruption that’s extremely dangerous to everyone around me.”
+
+The explosion slammed me back. All I had done was touch the doorknob. It shattered into a million shards of brass that squiggled off and bounced into the grass to shrink; a vibrant explosion of rainbow colours squiggled out from the point my fingertips had touched on the doorknob and bloomed like a thousand balloons inflating at once.
+	A heavy, shaking explosion rang out that was strong enough to burst capillaries. I heard a dull thud.
+	I skidded against the earth and my skin burned and scraped, droplets of wetness stinging and dribbling across my arms. I coughed, smoke belching up from my lungs and my mouth turning intensely dry as I heaved out choking coughs. Why was everything burning?
+	Black obsidian tears rolled down my cheeks like balls of molten glass in tandem globs. The sun flickered black, time ticked down; rainbow colours flashed and screamed from my house and formed a mesmerising filmy dome around it. Colours swarmed like soap on the surface of a bubble to form that barrier around my house.
+	I let my head lean back. The sky swam, clouds melding into fractals and reforming wildly, disconnecting and spraying spiralling shapes to scatter across the sky.
+	“Mom?” I whispered. “Dad?”
+	I felt alone. The world faded to grey. Then molten crimson melted down from my eyes and shattered that grey into infinitesimally small pieces. I rose to my feet as that rainbow colour flashed through the world, sparked, exploded, poured colour back to the trees and grass and the sky and into my flushed cheeks. I pushed to my feet and wobbled, stilled, globs of magma rolling down my cheeks and leaving ashy trails.
+
+I paused, wetted my lips. “You know how I came here. I showed up by chance like the rest of you.”
+
+I came, stumbling under a purple-lit sunset, to the house at 416 Montgomery. My arm was held crookedly to my side; all my eyes saw was red. Ren had their arm around me, looking concerned, and they were yelling for help but their words were muffled, muted. 
+I stared into the sun and it spawned black crows that sang, flicked across that orange-red sphere like gnats. We were deserting The Greatest War; and something about that house screamed magic. We stumbled into its comforting waves, purple and blue. A dark silhouette smoked freely out on the porch. Nobody questioned us. We collapsed to that couch, now frayed, but back then nearly new. I stared at the patterns in the ceiling as they swam around each other and Ren breathed gently against my chest. 
+
+“For years, I managed not to expose my corruption to you.” I swallowed, reaching for a nonexistent glass with reaching, searching fingertips. “I didn’t make mistakes– or, those I did, I could cover up without issue. I never harmed one of you in the slightest. That was, of course, until I took gloom.”
+
+Naomi melted into me with her eyes melting whirling rainbows leaking like a fluid over her lips. She kissed mine with vibrating pressure. I gaped as the world shook and shuddered around me, and my bare fingertips dragged down her back.  
+
+I was glad that Naomi wasn’t here for this meeting. Stuart had told me that she was in her psychotic state— it wasn’t like she’d be able to process anything. She laid curled comfortably in bed, staring into the roaring melting twirling colours pasted, glued, rolling into the endless depths of her mind. Not like those melted rainbow eyes didn’t know. She remembered everything, I was sure of it. Somewhere deep in that fucked-up brain, she remembered me, and everything I’d done to her.
+I rapped my gloved hand against the table. “I touched Naomi that night with my bare fingertips, maybe once, maybe many times, maybe by accident and maybe intentionally. When you’re off on gloom, you don’t know what is real, what parts of the world are reality and what are hallucinations. Sure, you’re still yourself in your mind. At the same time you’re out of your mind. I felt like a kid. I remember staring into the expanding infinite pointed stars of a car’s headlights and thinking they were the most beautiful thing in the world to walk into. I walked up a flight of stairs and wondered how it would feel to fall off the ledge. I lost my mind. Some things felt intense and others so lilting, calm. Other moments felt wrong to think, feel, or experience. Time slowed down to an infinite crawl and seconds later sped into hyperdrive. Time snapped and skipped like a rubber band; I don’t remember everything, only bright, burning moments like a billion glittering suns. I don’t know when I touched her first, but I touched Naomi and she got those slot machine eyes. Her eyes have infinite irises that roam, switch. I thought the distortion was a benign one. But then she started to lose her mind. She began talking about the machines housed behind her eyelids.” 
+	Ren, who had listened up to this point with tired rapture, sat up straight, rigid. They started to pay full, undivided attention, eyes burrowing sharply through that fog that had seemed to cloud their mind since their hellish encounter. I knew what was coming. I felt hollow, staring into their hawkish eyes. “She raved about an endless clockwork behind her eyes that spun and twisted cogs amidst an infinite orange storm. She called them infernal devices, and from that point on her psychosis only increased, evolved– or devolved, depending on how you put it.”
+Ren rose, eyes bulging awake, slammed their fists loudly on the table. “I knew it!” they screeched. “I knew you put something back there! Gabe! You put something behind her eyes. You showed her something, you—you showed her everything! You swore to me that you didn’t do it, Gabe, but you did, you did, you did you did! YOU PUT SOMETHING BEHIND HER EYES!”  Ren was primal, spittle flying. I stayed absolutely still, as rigid as the steely cords that hold a tension bridge steady.  
+“Hold on, Ren, that’s not what he said,” Alyssa said softly. I flicked her a thankful look. 
+	“Let him finish the story,” Stuart rumbled softly, his words warm furnaces blasting in a shivering winter day. 
+Ren, blinking hard, flicked their eyes to fix on mine accusingly and then darted them around the room, focusing on none of us for more than a second. They looked exhausted, drained. They glanced back at me helplessly then trembled and looked down.
+	“Okay, fine,” they said weakly, and sounded like they were about to cry.
+	I forced down a pitiful feeling rising in my chest. “So that’s how it was. Ren was distraught. They tried to see what Naomi saw— I’ll let them explain that to you in their own time.” I swallowed hard. “That’s everything that I’ve been hiding. That’s my buried secret.” 
+	I pulled off a glove with a vice-like grip and dashed my corrupted fingers across the flowered crimson fabric of the tablecloth. A brown mouse corrupted up from the patterns, sniffed the roses. It skittered on the table, fell, and hit the ground with a thick plat. It froze, shocked, stumbled around a bit, then sat down to die. With an internal organ ruptured, faeces leaked into the bloodstream. It shuddered, breathing heavily. By the end of the day, it would perish.
+	I swallowed hard. That was a terrible first demonstration of corruption. But maybe corruption was a uniquely terrible thing.
+	Ren looked exhausted, weak. I know if they were at full strength, they’d be on their feet now, screaming furiously and denying everything. They’d knock me to the floor, maybe try to punch me, kick me, my arms held over my head in self-defence— not out of fear, as they were much weaker, but to give them the illusion that they were winning. None of my answers had been what they had wanted to hear– Ren should have been furious. But the night’s events seemed to have exhausted them. Right then, no words passed their lips. Ren didn’t believe me— but that was just something I’d have to deal with in time.
+	Alyssa met my eyes with a thoughtful frown. Her lips parted with a tremble the way they always did when she was thinking, and she subconsciously chewed her cheek. “Well, if I’m going to be honest with you, I wish you’d told us all of this before. We’re your friends. We would’ve helped you figure out your corruption. That’s what friends do. I just wish you would’ve told us before it became dangerous.”
+	Warmth filled me. I opened my mouth to respond but something melted in my chest. I tried to speak, shut my mouth before I cried.
+
+We sat on the beach, sand sizzling in a billion glittering sun-warmed grains like ground up shards of glass below our feet. They basked in the summer sunset, melded with an eternal orange-red glow. My friends laughed, a tinkling sound like glass shattering. I reclined, searching eyes hiding behind pitch black glasses and a sweeping hat. I gazed upon them fondly and unpeeled my glove, dropped it below into the drifting tides where it swept under, spun wetly, relaxed. It swum with the fluid sand; the grains were swirling in the salt water as it flowed in, scattering about freely, mesmerizingly under the glittering sun. I reached up an ungloved hand and gently took off my glasses and hat, peeled away my other glove and grinned as the world swelled in full colour and warmth. And it was okay. My friends smiled at me and grinned at me. Everything was fine.
+
+Alyssa spoke again. “It was rather irresponsible of you to hold it in, I’ll tell you that much. You hurt Naomi pretty badly— and from what I gather you hurt Ren, too. Those are moments you’ll always carry with you, that you’ll have to take responsibility for until the day you die. But not for nothing, we all keep things in.  What you can do now is learn from your mistakes and be more honest with us.”
+	I took this all in slowly, absorbing it like a sponge as my cranium slowly dried of endorphins.
+	Ren was sobbing now. Before I knew it, they pushed to their feet and wandered off. I remained in my seat, swallowing hard. I didn’t know what to do. I forced the memory of Ren’s upset away. Instead I tried to focus on the way Alyssa’s words had melted my heart.
+	Ren. Why did you have to ruin this for me?
+	Until now, Stuart regarded this exchange silently, approving. But as he watched Ren patter away and saw me motionless, he glared at me with contempt, pushed out of his seat and waddled away. The darkness swelled around me, chilled, thickened. I leaned down to the table and put my head in my hands as the world spun and shook.
+ 	I looked at Alyssa pleafully, but she looked down without a smile, unreadable. “I’m feeling pretty sick, so I’m going to head to bed,” Alyssa said, “Go get some sleep, Gabe, you need it.”
+	She left me alone in the darkness, feet pattering off into nothingness.
+
+
+`
+
+        const outputElement = document.getElementById('output');
+        const speedElement = document.getElementById('speedControl');
+        const sizeElement = document.getElementById('sizeControl');
+        const speedValueElement = document.getElementById('speedValue');
+        const sizeValueElement = document.getElementById('sizeValue');
+
+        let speed = parseInt(speedElement.value);
+        let size = parseInt(sizeElement.value);
+        let index = 0;
+
+        speedElement.addEventListener('input', () => {
+            speed = parseInt(speedElement.value);
+            speedValueElement.textContent = speed;
+        });
+
+        sizeElement.addEventListener('input', () => {
+            size = parseInt(sizeElement.value);
+            sizeValueElement.textContent = size;
+            outputElement.style.fontSize = size + 'px';
+        });
+
+        function typeText() {
+            // Use innerHTML instead of textContent to render HTML tags
+            outputElement.innerHTML += textToType[index];
+            index++;
+
+            if (index < textToType.length) {
+                setTimeout(typeText, 1000 / speed);
+            }
+        }
+
+        function changeColors(bgColor, textColor) {
+            document.body.style.backgroundColor = bgColor;
+            document.body.style.color = textColor;
+        }
+
+        typeText();
+    </script>
+</body>
+</html>
