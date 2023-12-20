@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slow Type Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            transition: background-color 0.5s, color 0.5s;
+		background-color: black; /* Set the default background color to black */
+            color: white; /* Set the default text color to white */
+        }
+
+        #output {
+            white-space: pre-line;
+            font-family: monospace;
+            font-size: 18px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        #controls {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        #speedControl, #sizeControl {
+            margin-bottom: 10px;
+        }
+
+        .colorButton {
+            cursor: pointer;
+            padding: 10px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        #blackWhiteBtn {
+            background-color: black;
+            color: white;
+        }
+
+        #whiteBlackBtn {
+            background-color: white;
+            color: black;
+        }
+
+        #blackGreenBtn {
+            background-color: black;
+            color: #39FF14; /* Neon green color */
+        }
+
+	#beigeBrownBtn {
+		background-color: #F5F5DC;
+		color: brown
+}
+    </style>
+</head>
+<body>
+
+    <div id="controls">
+        <label for="speedControl">Speed:</label>
+        <input type="range" id="speedControl" min="1" max="100" value="32">
+        <span id="speedValue">5</span>
+
+        <br>
+
+        <label for="sizeControl">Text Size:</label>
+        <input type="range" id="sizeControl" min="10" max="30" value="18">
+        <span id="sizeValue">18</span>
+    </div>
+
+
+    <div>
+        <button class="colorButton" id="blackWhiteBtn" onclick="changeColors('black', 'white')">Black Background, White Text</button>
+        <button class="colorButton" id="blackGreenBtn" onclick="changeColors('black', '#39FF14')">Black Background, Neon Green Text</button>
+ <button class="colorButton" id="whiteBlackBtn" onclick="changeColors('white', 'black')">White Background, Black Text</button>
+	<button class="colorButton" id="beigeBrownBtn" onclick="changeColors('#F5F5DC', 'brown')">Beige Background, Brown Text</button>
+    </div>
+ <br>
+    <div id="output"></div>
+ <br>
+ <div>
+	  <button class="colorButton" id="whiteBlackBtn" onclick="location.href='index.html'">main.</button>
+    <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom1.html'">chapter 1.</button>
+    <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom2.html'">chapter 2.</button>
+	     <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom3.html'">chapter 3.</button>
+     <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom4.html'">chapter 4.</button>
+    <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom5.html'">chapter 5.</button>
+	     <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom6.html'">chapter 6.</button>
+     <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom7.html'">chapter 7.</button>
+    <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom8.html'">chapter 8.</button>
+	     <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom9.html'">chapter 9.</button>
+</div>
+      <script>
+        const textToType = `
+5 // GRACE IS GOLDEN
+
+Far away from the house at 416 Montgomery, the ocean roared a dismal song. It crashed into bottomless depths that gnashed chaotic glowing light, untouched by human hands. On the shore, the sea lapped gently against that sandy beach where sane girls drowned. A seagull flapped, flapped, spread its open wings to the thermal currents and glided down with a caw. As night faded it woke.
+
+Placid lake eyes lapped gently and bloomed as eyelids scraped open, clouds clearing for day.
+	Naomi shifted, uncomfortable. Sticky salt-dried sweat clung to her body, like cerebral ocean waves rushing and slicking up over her before burning down. The scratchy wool of a blanket dragged against her bare skin and realised she was in Gabe’s arms, drool leaking onto his chest. 
+	She was in her sane phase, thank fucking god. Shaking, Sane-Naomi trembled and yanked her clothes back into place, fumbled the buttons in through their eyelets, eyes flicking down to Gabe. Regarding his peaceful, uniquely etched face, her eyes traced its sharp edges and smooth curves rising and falling and a strange sort of fear rocketed through her. That nervous twitch was mixed with anger, but mingled too with a yearning softness and warmth. 
+	She pressed her fingertips into his cheek, subconsciously made a comforted sound. Then she pulled back and walked away, fingers tight clenched, flexed them, relaxed. 
+
+Sane-Naomi poured into her room and fell into bed, lying there staring up at the flickers of the ceiling fan. They whirred by like buzzing aeroplanes roaring in the night sky and vultures circling above a rotting feast. She closed her eyes. Footsteps clopped down shimmering tile with a clop, clop, clop, slip, whir and a snap.
+“Yeah, I haven’t been feeling the best since I got home,” Alyssa admitted, “But it definitely seems to be…” 
+The voice faded. She eased her eyes shut like creaking doors to block out the sun.
+.
+Half awake, Naomi blinked and pushed herself up. Gabe walked by as if in a dream. The world around him was lit a gentle mauve; his pupils were wide, shimmering and warping. Naomi closed her eyes tight.
+
+A bird chirped.
+Naomi woke again. Her eyes glistened wetly, reflecting jarringly the ceiling light in jittering white crescents as the fan whirred, whirred, whirred, shuck-a shuck-a shucked. The noise whipped and roared and grated to scrape  flecks off her brain like paint ripped from peeling black fingernails and she loved it.
+	She shifted, settled deeper in. Grey washed over her again, again, again. She couldn’t get up. There was no motivation.
+	Her eyes closed, melting below her eyelids.
+The snapping Band-Aid flag pills whacked relentlessly against the cerebral salted cranium beach. FOURTEEN HOURS UNTIL THE SWAP.
+	Get the fuck up, Naomi. You can’t go about wasting your day like this. You only have half the time.  Grey light cast shadows across her hair and down the distinct curve of her nose. She lay her head sideways, her cheek resting against the silken soft of the sheets and depressing them. You have things to do. You know that.
+She glanced at the shining wood of the table and her fingers scrabbled for her sunglasses, fit them over her face and pressed them to the bridge of her nose. She closed her eyes, imagined herself getting ready with a hurried craze, running through the room.
+Up. Her feet padded down to the carpet. As she passed her bedroom door and meandered to her closet, she heard Stuart whistling in the kitchen. She heard a flip and a slap of an egg or a pancake hitting the sizzling burning blooming cast iron pan above blossoming flumes of blue and yellow flame.
+She tried on clothes. She shuffled through a clean pile carefully, trying on an outfit and tearing it apart with her eyes, ripping it off, folding it neatly and gently placing it atop a new pile.
+Before she knew it, she’d gone through her wardrobe. Frustrated, she rooted through an equally tall pile of dirty clothes. These she took no care with– she trembled slightly, furious, as she changed– threw them on one by one, cast them back down with building tension.
+
+Naomi collapsed back into bed, sweaty and breathing heavily. None of that will do. 
+She bummed around, flicking about her phone, then went looking for him. She knew what would make her happy.
+
+Careful footsteps scuttered up.
+I peered my eyes open slightly, peering out at her under heavy lids. Sane-Naomi regarded me snoring on the couch. 
+“Wake up,” she said calmly, sweetly. When I blinked my eyes open again, I looked up with the dawning melting, oozing, and in my glistening orbs she saw the waking love of a toddler to his mother. Sane Naomi felt a pang in her heart, then steely coldness ran in. She lifted up her voice: “Come get ready with me!”
+Gabe’s eyes were ripply, pupils seeming to swim in and out of shape. Eventually they wobbled, settling back to perfect circles. They’d been doing this, swimming in and out, ever since Gabe had his… episode. Something had happened to him a few days ago, and he wouldn’t talk about it.
+Naomi stood over him, bent to kiss my forehead. “Come on.”
+	I followed blindly after her, fingers locked in hers and his mind a million miles away.
+
+I found myself sitting on Naomi’s bed.
+“Now this looks good on me, Gabe. Don’t you think so?”
+I stared into my hands with a slight smile. 
+Daydreaming again, Naomi thought. Can’t figure out if it’s irritating or sweet.
+“Gabe?” 
+Nobody had really believed him at first– about any of it. His stories were flawed, inconsistent, and he never seemed to remember what he’d told them. His personality recently, too, had fluctuated wildly, and he claimed he lost time quite often. 
+“Gabe!”
+Gabe looked up, startled. Love poured in and out from those golden eyes flecked with rivers of brown. Naomi felt something warm in her chest bubble up and melt all over itself, and he murmured, “You look great, Naomi.”
+She smiled, kissed him, and moved along with a spring to her step. She gazed at herself in front of a mirror, eyes greedily drinking in herself in a flowing black dress with a low cut and a sweeping black hat. She felt good.
+
+A canary chirped on the windowsill, a dried crimson thumbprint gently peeling off its coat. It took flight and fluttered with the rapturous sound of a thousand shirts thwacking on a clothesline.
+Naomi licked her lips, slid the car keys across the kitchen table with a rattling sllllide. Smooth fingernails glinted in the daylight. Her eyes were bagged in sheathes of velvety grey. Trembling pale fingertips brushed a coffee mug aside as she blinked in the glittering sunlight, fumbled around blindly, found her stored gloomstick and took a puff. It filled her lungs with ingratiating warmth, buzzing fiery golden light ravaging to nick every last alveoli. The world swam slightly, becoming pinker.  Then the effect receded, leaving the world slightly wobbly. Shit. I’m really building up a tolerance. I need a T-break. The metal coils in the stick heated, flared red, melting yellow, then darkened. 
+
+Utter blackness leaked into the walls of the cabinet. Then a door yawned open. Naomi’s petulant frown, lit by white light streaming from above and casting shadows down, ducked into the kitchen cabinet, spindly fingers searching, searching, until they brushed up against a bag of Special P. The flour-like powder compressed under the pressure of her fingertips and strained against the plastic film as she grabbed the bag tight and slammed the door shut.
+
+A vase mouth yawned, glittering blue glaze gleaming down. It stood high on a dresser, waiting.
+	A step stool was dragged across splintered floorboards with a creak. Splinters shattered off the bottoms of the legs tiny flecks of wood down. Thump, thump. thump.
+Searching wriggling fingers plunged into the vase’s gaping mouth and found the bag of Gloom carts. These were snatched with tight fingers and shoved in her pocket. Reaching deeper, she found a smaller bag of S.P. and a bundle of nitrous oxide carts, scooped them up with a glimmer. All this she shoved into a black leather handbag she’d stolen some months ago, zipped tight.
+
+Naomi breezed by the kitchen, her black hat ruffling. It was noon– Stuart was back in the kitchen, making stir fry which crackled and bubbled like a freshly popped soda can. He glanced up from his sizzling pan, smoothed greasy fingers on his apron and said nothing. Naomi leaned her head down slightly, brushed by, eyes staring down under the brim of her hat. She meandered gracefully down the hallway.
+	“Naomi?” The voice was distorted, ambiguous. Naomi squinted, listened harder, couldn’t resolve it for shit. Near the screen door, she saw a silhouette down the hallway emerge in a flickering blur. Damn. Maybe the gloom did hit after all?  She glanced back, squinted at the silhouette of someone she’d loved. Grandma? No… 
+“Gabe?” she asked. But then the shadow swam, warped and snapped to solidify into the tiny, hunched form of Ren. The muscles around Naomi’s eyes slightly stiffened, and her lips and brows followed suit.
+	“Hey, Naomi,” Ren said tentatively. Those dark hawkish eyes glinted. 
+October skies blew by.
+That tiny form glared up at her, screaming. Ren, when angry, was like a little lap dog ruffled, twitching and shuddering, barking loudly, a fucking useless little shit of a creature. But even the smallest dogs can bite with deceiving strength. Those wounds fester and infect.
+ “Where the fuck have you been?!?” Ren screamed at her, “Where the fuck have you been?” Their face was livid, contorted and tomato red. An eyebrow twitched.
+	Naomi backed against the wall, tensed up, glanced around herself.  “Ren…”
+
+Gabe leaned glibly on a car outside, staring into the stars with mottled peace. He searched for his place in those stars and constellations and wondered why such a blessed thing happened to him, that thing being getting Naomi into his life.
+
+Naomi clenched her fingers tight to the wall, scooted her hand along the wall. “Ren, I’m sorry. I know I’m late. I just went to see–”
+	“Don’t give me that bullshit!” Ren swore, grabbed a bottle of Hennessy and slammed it to shatter against the wall. A hail of seaglass bullets whizzed in every direction. “This happens again and again and you never fucking–”
+	Naomi shut her eyes tight and the world blurred.
+
+Naomi’s mouth twitched. “Get out of my way, Ren. I have nothing to say to you.” 
+Ren’s eyes crashed billowing hurricanes. They shivered, fists clenched, opened their lips and tried to speak. 
+
+“I’m sorry, I’m sorry,”Ren cried, pressing their knees firmly into the floorboards. Small red drops welled into glistening orbs flecked with shattered glass. They were shaking with a brush and dust pan, sweeping up the remnants of the bottle. “I never want to–”
+
+Ren’s words died on a limp tongue, rolled, closed, clamped shut.  Try again, Ren. Communicating your feelings is important. Say it: “I just want to come with you! I just want to be..”
+Swallowing hard, eyes flicking right and left, they tried again. But the words faltered, failed;  they wanted to say it but–
+
+Red skies bloomed in raucous stormy laughter and cracked, burst, shot vibrant buzzing bolts of electricity to slam to the arid earth.
+“Don’t leave me!” Ren screamed. They hung wildly over Naomi, their tiny trembling arms pinning her to the bed on either side. Their mouth was a torrent of gnashing yellowed teeth. Spittle clung in long serpentine trails between them as they screamed, “Nobody loves me like you do, Naomi! I need you! Nobody will ever love you like me! Nobody ever will! You fucking– If you leave me, do you know what I’ll do to myself? I’ll– Naomi, I’ll–”
+
+She poured, rushed by. Naomi’s fingernails glinted red lacquer as she breezed into the morning. Ren wiped their mind clean, shook their head at that searing burning flash of memory. 
+
+The clouds rolled like chariots. They danced on invisible wheels across the blue sky, jittering. I just need something, Naomi thought, fumbled with a cigarette, fitting it between her soft lips with trembling fingers. Anything to take the edge off.  She leaned herself petulantly against the corner of a building, terse lips downturned.  To make the thoughts go away. Naomi stood under those clouds’ looming grace, basked in their shade.It makes them bearable, you know? She ran the wheel with a shaking thumbnail, sparked, sparked, sparked that dollar lighter. Her trembling fingers failed to catch a flame. Anger flared through her, sparked on red wire and melded her brain’s machinery. Naomi finally caught a spark but yelped with excitement and it fizzled out. Shaking furiously, gloom distorting her movements, Naomi stared up into the sky. 
+Her expression calmed. The clouds looked a bit like ice cubes and shards crumbling down from a refrigerator to plop into a cup of blue water, spilling over and bobbing about. A wave of gloom rolled against her, briefly sharpening and fractalizing the sky into a myriad of broken shards with a sharpened creak and crash of glass shattering. Chunks of ice cascaded to suspend, began to form hail. Maybe the whole sky is just a sheet of ice, Naomi thought. Wouldn’t that be funny?The clouds spun, turned, ground against each other, became mortar and pestles.  
+As she tried again and again to spark her lighter, the wind rocketed by and tore those candle flames free into dancing disembodied sparks, wriggling off into time. It felt like her fingers were melting through the wheel. Maybe the gloom did hit? 
+The lighter sparked, flared, failed.
+Naomi looked up in irritation and a stinging bead shot right into her eye. The sky spilled over, minuscule beads sizzling to the ground with a million small plats and pthat’s. She quickly ducked her head and it thunked hailstones against her hat. As the angry grumbling clouds began to pour, she gave up and slipped her things into her bag.Her shoes nudged the silt and hail aside as she walked, scraping. 
+
+She walked, for a while, and her brain took her down familiar patterns. She wasn’t fully aware of it; not until thunder clapped with a billion reverberating screams and Naomi scrambled, rat-like, to sit on a step under an apartment awning. 
+Her sunglasses slid down on her nose as she shivered herself to warmth, nearly growling. She felt like freezer snow and the burn of a popsicle pressed against warm skin. The soggy cigarette perched between her lips drooped and she discarded it to the earth. She fumbled a new one, balanced between her lips. With the wind obscured by the wall of the building she easily lit the flame, took a heavy drag, tapped it to flake ashes like snow to fleck the ground.
+A banging rattling sound jarred her ears and shot spiny needles digging down deep into her eardrums. 
+Naomi glanced back at the screen door, flinched. A woman loomed out, gloom distorting her features; they rippled, devilish and monstrous, across her face. Naomi blinked, focused, but they wouldn’t resolve. Her body was short and plump. The figure wore a nightgown, flowers drifting around it under the influence of gloom, peeling off and blooming open. To the best of Naomi’s blurring vision, she was looking at an older woman.
+The woman unpeeled the door, washing warmth to blossom over Naomi. “Now, young lady, you do need to get off my porch. Oh. It’s you.”
+Recognition bloomed through Naomi. It was indeed an older woman, slightly squat, with golden rectangular glasses whose rims peered windows into another world. Naomi remembered that she was the grandmother of somebody she used to know. She and that person used to sell together. 
+“Oh, hey, Annabelle,” Naomi said with a note of sadness.
+The woman hobbled closer. Her features distorted the craggy mess of her aged face into a smile. She bent down, put a hand on Naomi’s shoulder.
+
+ALARM!!!
+Her head flared red. “DON’T FUCKING LEAVE ME!” Ren screamed. “YOU KNOW WHAT I’LL FUCKING DO IF YOU LEAVE ME ALONE?” their thin arms trembled, clenched to either side of her waist. “I’LL JUST GO AND–”
+	ALARM!!!
+
+Naomi flinched, refusing her urge to snake away from the older woman. She forced this through her head again and again: remember who you are, tensed and hunched, remember what you’re here to do. Uneasy, she tolerated the touch. 
+The woman spoke, and her voice was rolling thunder claps and lightning flashing down. “Oh, dear, you look cold. Can I get you anything? Oh, I can get you a sweater!”
+Naomi flinched, her eyes slid over. “No, Annabelle, thanks. I’d only wreck it in this weather. Plus, I have to go again soon. I’m on the clock.”
+Recognition hit the woman’s face. “Oh. Oh, dear… do you still…?”
+Naomi’s lips twitched, flattened. They slipped open and echoed, “Yes.”
+The old woman sat down next to her, pulled her shoulders into a hug and gripped them. Naomi was torn between a warm blossoming comfort and the fact that the woman’s fucking hands were touching her, grating her bones together, violating her space, and–
+“You know, Grace still talks about you.”
+Naomi’s vision flashed dark. 
+
+Grace curled up on the couch, sobbing. Her grandmother stood over her, oven mitts dangling uselessly from one hand.
+
+Annabell loomed over Naomi like a storm cloud crumpling. Naomi hunched away, stared up at her. Anabelle’s face crumpled with genuine concern and sadness: “Naomi, that girl misses you. You weren’t at all good for her– God, I can tell you that much, you never were. But—-” She shook her head and her craggy face relaxed. “Something you’ll learn is that you change with age. Your perspective on life changes. Now, when Grace was young, I thought that I was doing what was best for her.”
+She paused. “But maybe I was wrong. With age… some thoughts, some decisions... change. You realise that you did some things wrong.”
+The rain poured down, crashing droplets spreading miniature tides. Naomi twisted the cigarette between her shoes, ground it out on the thin film of wet. “And what do you want me to do with that?” The words were crooked, harsh, and jittered around in her mouth to rattle and escape. Damn. Fucking gloom.
+ “Do you want to see Grace? I think she’d love that. She’s home right now, in fact.”
+“Oh, okay,” was all she could mutter. Her mind had gone blank. Naomi stared into that rain, eyes harrowed as lightning flashed with an ephemeral flicker.
+“I’ll go get her,” Anabelle said, nodding multiple times. Nodding internally, too, resolving herself. Yes, yes, this is the right thing to do. Stairs clunking creaking carpet thrashing underfoot. A mumbled call deep inside the house, and then the voice carrying the footsteps receded, faded.
+
+A creak. 
+A warm presence leaked from the house, hesitated, stepped forward. Golden light poured forth, lit shining molten squares to dribble down Naomi’s drenched back. “Hey, Naomi.” 
+Naomi looked back at her, felt a rush of pulsing conflict stagger across her features. “Hey.” The wind tore off her hat but she fumbled for it, snatched it in nimble fingers and crammed it back on. The girl stood over her like a beam of sunshine. She had long, glistening blond hair, and perfect bronzed skin. She had an easy smile, gleaming white pearly teeth. She wore a sky-blue sweater that lay on her perfectly. Not a yarn was out of place. Her pants were tight fitting and smooth, seamless, without a single blemish or wrinkle. 
+Naomi felt her frigid soaked clothing constrictive suddenly– worn for multiple days and slightly mildewed. Suddenly, she didn’t like her wide-brimmed hat all that much, and her pride in herself plummeted.
+
+Gabe looked up, smiled with loving eyes. “You look great, Naomi.”
+She felt a blossom of warmth, smiled slightly, composed herself. She opened her mouth– hesitated.
+The sun stood over her, waited. In every way, Grace was the opposite of Naomi. Naomi was dark, ragged, torn; Grace appeared full, glowing, pristine. And this was why the moon hated the sun.  Naomi fidgeted nervously. But why don’t I hate her, not all that much at all?
+Sensing her nerves, Grace leaned down next to her. “It’s been a while, hasn’t it?” Grace said. “Since we last sold together.”
+
+A car roared and squealed down the smoothly hilled road. Summer music pooled from the car radio like molten metal dribbling to their feet, filling their ears with copper and diamonds. The afternoon sun glowed down through drifting verdant palm trees, refracted all around her car and gleamed silver. Naomi and Grace laughed and pulled each other closer, jittered and elbowed and cackled, fingertips linked and meshed and engorged. 
+Grace pecked Naomi playfully on the cheek and Naomi blushed, leaned back in to return it and then they kissed wildly, lightly, fluttering playful heartbeats fluttering like twittering songbirds and hummingbirds buzzing teasing each other, swirling in the summer skies. 
+They laughed and roared and the engine soared, buzzed down Golden Boulevard.
+
+The crumpled grey sky curled frigidly in on itself, ground its teeth, and leaked buckets of tears to splatter frigidly down. 
+“Yeah. It really has been, hasn’t it?” Naomi looked up at her, patted the step.
+Grace quietly loomed, looked down at the damp, moulded step. “Look, Naomi…”
+	“Just sit with me for a moment,” Naomi insisted. Please. I don’t have anyone now. “We need to catch up.”
+Grace stood there for a second, lips downturned. Then they twitched. A slight smile leaked, her perfect lips turning up and forming a gap for pristine teeth flashing. “Oh, fine,” Grace allowed happily. She sat down on the sodden stair, scooted closer to Naomi, streaking her pants green and ripping miniscule threads astray. That warm cushioned form leaned into Naomi, shivered in the damp. “Naomi, we’ve both changed so much.”
+
+Gabe stood under a fractionating sky, mouth agape as explosions rained down. Naomi gazed at him lovingly.
+Naomi suddenly felt guilty, leaned away. “Yeah, we have.” 
+It’ll be fine. We’re just like friends now. She leaned back towards Grace, albeit with some meagre space between them. “I’m going on a selling spree today,” Naomi spewed words suddenly, flowing like grain into a feed mill. This flowed over her lips: “You can come with me, Grace, just like old times. We can smoke and sell– and we’re older now! We don’t have a curfew and–”
+
+THIRTEEN HOURS LEFT UNTIL THE SWAP. 
+
+Naomi grimaced internally. So much for that. But she didn’t show it on her face. She kept on without a hiccup “-and it can be just like before. You remember, Grace, right? You remember how fun it was?”
+Naomi stared into the rippling rain pouring down the street. An uncomfortably long silence. She glanced over at her. “Right, Grace? You remember that.” 
+	“Right…” Grace said quietly. The blond girl sat erect, staring with glittering eyes into the rain. Her lip was downturned slightly, marring that perfect face. “I don’t think… I don’t think you remember things quite right. Look… Stu told me that your memory is kind of fucked up nowadays.”
+	Naomi glanced at her, mouth agape. “What?” –the fuck? Stu, what the actual fuck?
+	Grace raised her palms in defence. “Don’t get mad. All I heard was that you had some sort of accident. Everyone knows, Naomi. Stu’s not the only one with a social circle– he just wanted to clarify. Rumours spin and burst and spread like monarchs flutter to the omayel in October. I just… Naomi, I don’t think you remember the bad parts.”
+Naomi scoffed. “Nothing was bad, Grace. What are you talking about?”
+But then–
+
+The night jittered down as the stars screamed and squiggled violent electric streamers through the sky.
+	Neurons fizzled out, Neurons fizzled out, Neurons fizzled out–
+	“I TOOK TOO MUCH!!!” Grace screeched, “I TOOK TOO MUCH!!! I’VE TOOK TOO MUCH!!!
+	Neurons fizzled out, Neurons fizzled out, Neurons fizzled out–
+Naomi swore. The orange sky drifted red dust into the car. The red sky bled down and the car melted and spindly red creatures with infinite foreheads stumbled out from the windshield, ran furiously outside to beat the sand relentlessly. Fumbling, her ragged shirt dragging, Naomi forgot what she was looking for. She leaned over to Grace’s ear and mumbled, “It’s going to be okay. It’s going to be okay. It’s going to be okay–”
+Grace was shaking there, huddling in the driver’s seat, leaning back and forward, rocking like a a screaming crying baby locked into a cradle. Her world bloomed yellow and burnt red and sizzled, seared through her, fizzled, fizzled, fizzled in her brain. Her hair was frazzled, her fingertips tangled in it. Red streaks of fingernail gashes lacerated bled on her cheeks. Her eyes were wild, bloodshot.
+	She’d taken twice as much as Naomi at least. And then she began to scream.
+
+Naomi was shaking. She hadn’t really remembered that. “Just one bad trip?” Naomi said aloud. “Really, Grace? That made our life bad? We took too much Gleam. That’s all.”
+“You never said it was good either,” Gabe said quietly. “Not back then. You never called them ‘good times,’ Naomi. You never said a positive word to me. Not one. In fact, I’d be shocked that you’d even come to visit me if your memory wasn’t shot.”
+I did just come by to smoke a cigarette, Naomi admitted to herself. “Oh, Grace,” she said softly instead. “Of course I’d visit you.”
+	“You swore you never would,” Grace spat. 
+Why the hell would I say that? “What–” 
+“Things weren’t great, Naomi!” Grace nearly screamed, “Not between us! Not in our lives! You know why!” Her voice softened, and she tried to calm herself, fists trembling as she got to her feet. “Of course, you don’t remember. 
+
+“Fuck!” Grace screamed, flashing a knife in the darkness in a searing arc as Naomi stumbled, ground pavement snapping underfoot. The pile of lanky limbs swarming around that lanky, greasy man with frazzled black hair caught up to Grace, and with one premeditated stab and twist she was–
+
+What the hell? Naomi began to shake. She legitimately didn’t recall that memory. “Look, Grace–”
+Grace sat down again, leaned into Naomi. “You don’t remember most of it, Naomi.” Grace cut her off quietly. “If I know you, even if Stu was lying, even if there was no accident, I know you and you’d only let yourself remember the good parts. Maybe you only recall the start. Probably the end, too. I’m sure you felt like you had some personal growth after we broke apart.”
+Naomi closed her eyes. Maybe you’re right that I don’t remember everything, Naomi thought to herself. Then she became furious. Maybe that’s because I can’t. Maybe it’s because of that psychotic bitch. 
+Behind closed eyes, Sane-Naomi glared across her memory. It rippled, a placid lake filled with sparkling glittering moments. At the start of her time with Grace, a golden memory flashed and glimmered– a still frame of the car rocketing down Golden Boulevard. Most of the rest was gone, black tides lapping. She had some slight, bubbling idea that she should blame Gabe for this– but then it was buried by her subconscious, drowned and covered deep, deep, deeply by psychotic hands. Those psychotic hands held all the rest of her recall, she was sure of it– it was that psychotic fucking bitch Psychotic Naomi to blame. She had ruined things, and apparently scrambled her memories. It was definitely her. Sane Naomi knew she’d never repress anything like that.
+Naomi waded into the stretch of memory. Here and there, glimmering in that lake, bobbed vivid flashing colours– the most traumatic, the most vivid, and most exciting moments of her years with Grace.
+	She found a smaller violet memory, brushed against it. Naomi’s vision blurred, purple glow.
+
+A raven crowed. Grace laid there in a purple emptiness with her eyes rolled back, small red dots blooming in the surface of her skin. A syringe crunched under Naomi’s bare knees as she shifted.
+
+Naomi began to shudder. Alright, she thought to herself. Maybe Grace had a point.
+
+	“So…? Grace was quiet, giving Naomi the space and time to speak. Naomi’s mouth opened, closed, dry. She had no idea how to explain it.
+I have nothing, Grace. I think you were right, in the end.
+“So, no,” Grace said, lips tight. “I don’t remember the good parts. Naomi, that wasn’t a good time for me.”
+Naomi fumbled with a cigarette. “Right. No, right, whatever. I get it.” She flashed a smile at her, cast her eyes down, traced the water with the toe of her shoe. 
+I fucking hate that psychotic bitch, she thought instead. I fucking hate Grace, Gabe, everyone. Naomi– leave me the fuck alone. Grace– you’re important to me. Just stay. Stay with me for who I am. Don’t… leave… me.
+Her eyes rolled up and glistened at her. Grace’s sweater clung primly; her nails were perfectly painted; uniform makeup plastered her face. The girl’s eyes locked down to gaze at her, that face distorted slightly, forming the tiniest wrinkle in her perfect cheek. The look Grace gave Naomi was peculiar. It wasn’t quite pity, regret or melancholy. It was a mix of discomfort… upset… and resolved relief. “Look… Naomi.”
+“Yeah?” Naomi cleared the hatred from her head. She forced herself to sidle closer, leaned against that warm form. It felt forced, mechanical.
+Grace leaned in, and her fingertips brushed against Naomi’s. Temptation and warmth washed over her. I can’t… I can’t… Speak anymore.” Her tongue was limp, cold, dead.
+“Naomi… I’m not mad,” Grace said. “I’m not mad about anything that happened back then. To be honest, I don’t even think about it anymore. I don’t know what Annabell told you, but she likes drama, likes to… embellish… things. I know I’m not who I used to be… but I’m happy like this, now. What you’re doing isn’t wrong. I just don’t… I don't really think I can do it with you. I don’t do stuff like that anymore.”
+“You don’t–”
+“The selling,” she cut her off quickly. “Not…
+
+Naomi and Grace were tangled in the back of the car.
+
+Her blood thumped, thumped, thumped. “Right.”
+There was a pause. Grace hesitated, said more slowly, “But you’re right about that, too. What you insinuated.”
+
+Grace was twelve, Naomi thirteen. This is how their dynamic went:
+
+“We’ll use your mom’s car,” Naomi said glumly, kicking a cigarette.“That’s fine.”
+	Grace worried. “But–”
+	“You won’t get in trouble. Trust me.”
+
+And:
+“You go first,” Naomi said as they kneeled before an open metal vent, “You’re my little guinea pig. Crawl.” Grace looked back, terrified. 
+Naomi kicked her into the grate.
+
+And:
+“You’re special to me,” Naomi said as they hid in the basement, bodies buzzing hot and then trickling frigid cold dissolving. Every sound was amplified, jittering and whirling, blaring and washing and shuddering down. They’d overdosed on something neither of them remembered, but it was flatlining, slowly wearing down. “Nobody is like you to me, or ever has been. Just remember that, never forget that. Never leave me.”
+Then the drugs wore down and they forgot.
+
+Time jolted by on crooked wheels. Naomi was fourteen(seventeen?), Grace was thirteen(sixteen?).
+—issue is I need this to not conflict with a later plotpoint for Naomi in HS 
+“I’m sick of this!” Grace screamed. The sky bludgeoned yellow clouds to rocket across smears of bright red sunset. “You just use me again and again! You use me for drugs, for money– You don’t love me!”
+The two of them stood under that bleeding red and yellow sky. Naomi stared at her, teeth clenched and furious, looming hunched, torn black clothes hanging loosely. Her black eyeliner was smeared, her lips a sneering scowl. “Of course I love you. I told you!  I told you– I reassured you again and again–”
+
+Her reassurance was such:
+“Give me that,” Naomi spat. You're mine, so we share. It’s mine.” She fumbled through her wallet, took her gloom carts.
+	Grace sobbed in the corner.
+
+And:
+“Your family is loaded,” Naomi hissed. “They can handle it.”
+	She rummaged through their change drawer and took their silverware, too, and then headed to the cellar to scrummage.
+	She stared back. “Don’t tell,” she whispered.
+
+Those yellow clouds bludgeoned.
+	“I love you!” Naomi screamed internally.”It’s just that I’m not used to this. I’ve never had, so I just take–”
+
+Which was true. Sometimes, Naomi sat alone in her basement, grubby fingers clutching a rust-spotted metal can. Her clothes hung stained, ragged, perpetually reeked. She gazed noxiously into the thin film of separated liquid, yellow and murky, welling above the vivid bright colour. Her eyes were bagged, harrowed. She huffed and puffed. Her parents screamed at each other upstairs in jittering smears upstairs and sounds crashed down like rattling cans. Euphoria blasted that all away and she laid back, kicking glue containers across the floor.
+
+The memory rang in her head as yellow festered above in roses blooming clouds. She said to Grace, “I told you that I love you. I reassure you every day. What else do you fucking need from me? Huh?”
+
+Memories crashed.
+Dad stood over her and Mom was looking away, arms coated in purpling blossoming welts, eyes downcast. He said, “No matter what you do to someone you love– no matter what they do to you– they stay You stay. Love is unconditional, unbridled.” He wrapped his arm around Mom and she flinched, eye twitching, and he pulled her tighter to his side. “Right, honey?”
+	Silence. Dad looks bitter, twitched, stares at Naomi’s mom.“Blood is blood. When you love someone,  you never leave.”
+	Naomi looked up, eyes full of hope, and believed him.
+
+Mom pulled her aside moments later.
+“It’s okay to leave your partner if someone is hurting you,” Mom said, more to herself than anything.
+	Naomi looked up at her side profile cut into the living room as her mother stared off into the clouds. Mom gazed down the hallway into the light of the outdoors, illuminating the uncertainty and twitching fear on her face. 
+	“Then why don’t you?” Naomi asked. “Why don’t you leave Dad?”
+	She looked into the little girl’s eyes, went rigid.
+
+Naomi blinked on the porch, head in her hands. Grace just kept fucking talking. She wouldn’t shut up, talking about their past, and it was jolting up unwanted memories. But she knew it was important to her. Shut the fuck up, Grace! She trembled and fit a lit cigarette between her lips, cussing internally, and–
+
+ALARM!!!
+
+“IF YOU LEAVE ME,” Ren screamed, shaking and gripping her arm until it bruised gently, “I’LL– I’LL DO THINGS TO MYSELF!! DO THINGS THAT YOU’D NEVER IMAGINE! I’LL– I’LL KILL MYSELF!”
+	The words echoed, but Naomi was repulsed. Her head swam, red. 
+Naomi stood there, eyes deadened. “No you won’t,” she said, emotionless. 
+	Ren looked at her, shocked.
+	“You won’t.”
+
+Dad was on his knees, grovelling to Mom, arms wrapped around her legs. She shivered, tense.
+	“Don’t make me leave,” he bellowed, blubbered, sobbed. “I need you, I need Naomi. Without you in my life, I’m nothing. What do you expect me to do? If you leave me alone, I’ll have nothing left to do but to–”
+“Stop this right now,” mom seethed. “I know you don’t need me. Oh, you’ll find some other poor woman to string along and ruin her life and I know it. So shut the fuck up. Don’t say these things around your daughter. Look her in the eyes, tell her that you love her. You blew your chance at an amicable ending, an explanation. Tell her that you love her. Do that and go.”
+He looked down at his little girl and trembled. Sat down on one knee, kissed her forehead.
+“Goodbye, Naomi. I love you and I always will.”
+	Mom pulsed furiously, smiled slightly.
+
+
+“You won’t,” she told Ren.
+	Ren stood there in a stupor. “What?”
+“You won’t kill yourself,” Naomi said, looking at her nails. “You’re too selfish.”
+“What did you just say to me?” Ren said. They advanced towards her.
+
+Dad stood over Naomi’s mom, furious. Naomi hid behind the couch, shaking, the rusted can wedged between sodden couch pillows. “I’m leaving!” Mom screamed, and Naomi covered her head with a blanket. 
+“Like hell you are!” Dad screamed.
+Naomi pressed the blanket tighter over her ears.
+“Mrph mprh mprh!”
+Thud. Thud. Slam.
+ Naomi shut her eyes tight, jittering back and forth.
+
+She looked at Ren, emotionless. That little soul’s eyes glistened.
+“You’ll never kill yourself because you love being alive too much,” Naomi said calmly. “You admire yourself beyond belief, even if some nights you hate yourself more. And you want me. I know you, Ren. I know you won’t stop until you get what you want. If you can’t have me, you’ll find some way to ruin my life and the lives of everyone around me to tear me down and rip away what I want more than you wanted me. Someday, I will find someone I want more than anything in the world, and you’ll take them from me out of spite. And then you’ll laugh.  Now, don’t you want a chance to do that to me?”
+Ren stared at her silently. She saw it in their eyes– they knew it was true. It was a glittering hope, twisted and beady.
+“Look, Ren, I don’t care what you do. We're not friends. This is over. You know that you want to find a way to get what you want. And I’m confident that you will. You’re capable of great and terrible things, Ren. It’s up to you to decide what you want to do. I’m just putting that option out there. Right now, you’re hurting me. So I need to go. I’m leaving, Ren.”
+
+Dad heaved breaths, stared at Naomi’s mom cast against the rug.
+“You’re not leaving,” he said, gripping Mom’s arm and pulling her up.
+“Yes, I am,” Mom seethed in his face, ragged. “I’m leaving right fucking now.”
+He stared at those hardened, glittering eyes, and eased his grip slightly.
+Mom tore her arm away, swayed, composed herself. She flicked something out of her eye, heart pounding. “This is the choice I’m giving you. Either I leave right now, or you do tomorrow morning. You should choose the second. That way you get to tell your daughter exactly why her dad is leaving her, to her face. You get to tell her the truth. She’ll remember that, and love you for it. Otherwise, I’m taking her with me on my own. You’ll keep the house, and your family will suffer, and by god will I fucking demonize you.”
+Dad looked down at her, at Naomi on the couch, and started to tremor.
+
+“Fuck,” Naomi whispered, eyes swelling, glittering rainbows threatening to bloom through and let the psychotic bitch out early.
+	“You okay?” asked Grace.
+	She looked into those eyes, and realised she was getting to her. She didn’t know what the girl had said– but somehow, the sharing was making her comfortable. “Yes, dear. Keep going.”
+Grace parted her lips.
+	
+Ren stood there silently. They saw the truth– Naomi could see it in their eyes. They knew.  Their fingers touched her arm and she whipped around. “Get the fuck away from me.”
+Ren backed off. They understood, finally, their arrangement.
+“I have fond feelings for you, Ren,” Naomi said. “Don’t ruin that. And on’t get anywhere fucking close to touching to me or I’ll make sure you’ll never see my face again, that’s a promise. Otherwise, we can stay amicable. I promise.Take care of yourself. ”
+
+Her memories calmed, Grace’s voice broke through. “And I meant it when I said I’d never leave you. I loved you, Naomi.”
+
+“I promise you I’ll never leave you,” Grace had said in the beautiful sunlight glinting down through a summer gorging waterfall. “I promise.”
+
+“Dad! Naomi screamed as he walked into the light.”Don’t leave us!”
+	Her mom’s face tightened, lips curved down.
+
+“If it’s not love,” Mom told her, “The feelings will fade. And then it’s okay to go away.”
+	Naomi glared at her.
+
+Naomi had one hand crammed in her hair, the other supporting her chin with vibrant pressure as a cigarette flowed between its free fingers. The rain had eased, and the sun had begun to glow through the clouds, melting yellow light over the world. Grace stared into it, her lips parted: “But things were bad. You have to recognize that.”
+
+Naomi and Grace stood beneath the red streaked golden sky. “I told you that I love you,” Naomi said again. I reassure you every day. What else do you fucking need from me? Huh?”
+“Prove it, Naomi.” Grace said, sniffling. “Prove that you love me. Prove that you’re not using me.”
+	“What did you say?” Naomi screamed. Is she trying to leave me?
+
+“Daddy needs to go away for a while,”Mom said to young Naomi. “Sometimes, people who love each other need to be apart for a very long time, or else they’ll hurt one another. And sometimes, as sad as it is, they need to stay away forever.”
+	“Is that like you and Dad?” Naomi asked.
+	“We’ll see.”
+
+The memories slowed their roll. Two were left.
+The night yawned at the playground. Evergreens swayed in the darkness, yawned, pulled in that rain slicked scent. The two of them were perched at the top of the playground structure, infinitely high.
+Naomi was staring at her.
+“What?” Grace asked.
+“You said something funny earlier,” Naomi said, dark eyes flashing, and pushed her off the structure.
+The world rushed by in a caking whorling chill wind. Grace screamed. Bony fingers snatched out from Naomi’s wry arm and grabbed her by the ankle. She hung over fifty feet of freefall, vertigo whisking the world around you.
+“Grace. Will you ever leave me?”
+	“No, Naomi!” Grace screamed, “Why would you ask me that? I didn’t say that! I didn't say anything like that!”
+ Naomi tsked, dropped her an inch. Sure you did. She slipped, screaming. Naomi resumed her grip, eyes rolled to the shivering navy stars. I heard what you said. ‘This is getting tiring,’ you told me. With those cold, harrowed eyes. 
+	She looked down at Grace, disgusted. “Promise?”
+	“Yes! I promise!” Grace sobbed. Fifty feet of freefall spin below her, head dangling. “I promise.”
+	Naomi tugged her back, dropping her to the platform. “Fine. Yeah, well, that’s what they all say. Whatever.  Let’s go. You passed my test.”
+Grace lay below her, panting, then swallowed her fear and smiled up at her with fear mottled adoration.
+	“Alright, Naomi.”
+
+They stood cast under that red and yellow for one last time. “Prove that you love me,” Grace said, sniffling. 
+	“What did you say?” Naomi screamed. Is she trying to leave me? No! I’ll leave you first! “Fine!” Naomi screeched. “We’re done!”
+	“What?” Grace said, lips falling agape.
+	“I said we’re fucking done!”
+	Grace shivered, furious. “You fucking– Fine! Yeah, we’re done! I’ve wanted to end it, anyways! I’ve wanted to end it for months!!”
+	Naomi shook, shuddered, bit her fingernails into her fists. “What the fuck do you mean. What do you mean by that?” 
+“I’m scared of you! I… I hate you! You terrify me, Naomi!” Grace exclaimed, furious. “The corners of your mind… they’re dark and terrible and twisted and I’ve wanted to leave for a while and I hate you!”
+“Grace?” Naomi screamed, “Fine! Fuck you, too! I’m never coming back to you, you hear me? No matter how much you beg. I’ll never see you again! Never!!”
+
+
+
+
+`
+
+        const outputElement = document.getElementById('output');
+        const speedElement = document.getElementById('speedControl');
+        const sizeElement = document.getElementById('sizeControl');
+        const speedValueElement = document.getElementById('speedValue');
+        const sizeValueElement = document.getElementById('sizeValue');
+
+        let speed = parseInt(speedElement.value);
+        let size = parseInt(sizeElement.value);
+        let index = 0;
+
+        speedElement.addEventListener('input', () => {
+            speed = parseInt(speedElement.value);
+            speedValueElement.textContent = speed;
+        });
+
+        sizeElement.addEventListener('input', () => {
+            size = parseInt(sizeElement.value);
+            sizeValueElement.textContent = size;
+            outputElement.style.fontSize = size + 'px';
+        });
+
+        function typeText() {
+            // Use innerHTML instead of textContent to render HTML tags
+            outputElement.innerHTML += textToType[index];
+            index++;
+
+            if (index < textToType.length) {
+                setTimeout(typeText, 1000 / speed);
+            }
+        }
+
+        function changeColors(bgColor, textColor) {
+            document.body.style.backgroundColor = bgColor;
+            document.body.style.color = textColor;
+        }
+
+        typeText();
+    </script>
+</body>
+</html>
