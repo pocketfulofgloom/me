@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slow Type Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            transition: background-color 0.5s, color 0.5s;
+		background-color: black; /* Set the default background color to black */
+            color: white; /* Set the default text color to white */
+        }
+
+        #output {
+            white-space: pre-line;
+            font-family: monospace;
+            font-size: 18px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        #controls {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        #speedControl, #sizeControl {
+            margin-bottom: 10px;
+        }
+
+        .colorButton {
+            cursor: pointer;
+            padding: 10px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        #blackWhiteBtn {
+            background-color: black;
+            color: white;
+        }
+
+        #whiteBlackBtn {
+            background-color: white;
+            color: black;
+        }
+
+        #blackGreenBtn {
+            background-color: black;
+            color: #39FF14; /* Neon green color */
+        }
+
+	#beigeBrownBtn {
+		background-color: #F5F5DC;
+		color: brown
+}
+    </style>
+</head>
+<body>
+
+    <div id="controls">
+        <label for="speedControl">Speed:</label>
+        <input type="range" id="speedControl" min="1" max="100" value="32">
+        <span id="speedValue">5</span>
+
+        <br>
+
+        <label for="sizeControl">Text Size:</label>
+        <input type="range" id="sizeControl" min="10" max="30" value="18">
+        <span id="sizeValue">18</span>
+    </div>
+
+
+    <div>
+        <button class="colorButton" id="blackWhiteBtn" onclick="changeColors('black', 'white')">Black Background, White Text</button>
+        <button class="colorButton" id="blackGreenBtn" onclick="changeColors('black', '#39FF14')">Black Background, Neon Green Text</button>
+ <button class="colorButton" id="whiteBlackBtn" onclick="changeColors('white', 'black')">White Background, Black Text</button>
+	<button class="colorButton" id="beigeBrownBtn" onclick="changeColors('#F5F5DC', 'brown')">Beige Background, Brown Text</button>
+    </div>
+ <br>
+    <div id="output"></div>
+ <br>
+ <div>
+	  <button class="colorButton" id="whiteBlackBtn" onclick="location.href='index.html'">main.</button>
+    <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom1.html'">chapter 1.</button>
+    <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom2.html'">chapter 2.</button>
+	     <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom3.html'">chapter 3.</button>
+     <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom4.html'">chapter 4.</button>
+    <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom5.html'">chapter 5.</button>
+	     <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom6.html'">chapter 6.</button>
+     <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom7.html'">chapter 7.</button>
+    <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom8.html'">chapter 8.</button>
+	     <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom9.html'">chapter 9.</button>
+</div>
+      <script>
+        const textToType = `
+PART IV: A VISITOR LATELY
+
+9 // A VISITOR LATELY
+
+Crimson sunset blazed and the sky poured violet response. 
+Stu was wrapping something harsh and red– white bandages strung to red rivers– because a stranger lay on the couch, panting and breath hitching, murmuring insanity as he clutched at his gelled black hair with his good hand. “What happened, Stu?” I asked as purple light bled in through the window and he stared at me with harsh coal eyes glimmering softly in the moonlight.
+“Not sure,” Stuart said gruffly, and I heard him singing, that man on the couch. “Keeps saying something big is coming. But he’s safe here. Anyone who comes here is safe.”
+I crouched beside the singing man, stared at the twisted knotted features, watched that mouth gasp open and turn towards me, teeth clenched. “What happened to you?” I whispered, and his eyes shimmered brightly, and I swore in that moment, as sweat licked down my temple, I swore that I knew exactly what had–
+
+“I need to tell you a story.”
+	He’d somewhat recovered– not crazed, at the least. All of us but Naomi, off in her psycho phase, were sitting across from him at the dinner table, and my eyelid was itching, itching me. 
+God– it’d been a while since I’d slept properly. My gloves pressed into the glinting mahogany and waited impatiently– please let this be quick– I just need some goddamned rest– fingers tapping, tapping, a thin sharp crescendo. 
+	“Alright,” Alyssa murmured, glaring daggers at me, and I fell still. Sorry, Alyssa. I know that was rude. “Tell us all about it. We’d be pleased to listen.”
+I smiled wanly. Alyssa was being extraordinarily patient– but usually we all were, somehow. Even though my irritation was rising, usually some calm wave kept washing over me– it always did when we had new arrivals at the house at 415 Montgomery. Something was wrong today, though. 
+Warmly breaded chicken laid before us– full of salt and baked garlic– usually i knew I’d enjoy it, but something about it made me feel ill. I’d never felt this kind of upset at new arrivals– I must have been coming down with something.
+	“My name is Ramsey,” he said, drawing my eyes up, Ramsey Pollard.“ He smiled around at us, guilefully charming– somehow daring us to say otherwise. “I want to tell you tonight the story of the Gibbering Oneness.”
+	Bleakly, I stared down at my chicken. Intense nausea rolled up in waves. As Ramsey started to speak again, my gut churned immensely, twisting itself into a tangled, sickly knot, and “I think I need to go to bed,” I said suddenly, voice hoarse. “I’m feeling terribly sick. I’m sorry– excellent to meet you, Ramsey,” and I pushed out of my chair with a squeal, eased from the table, stumbling down the hall and humping up the stairs.
+Almost there– 
+I slipped on the carpet and crashed into the corner of my bed, forehead smarting, and groaned, pulled myself into the covers. I pulled the sheets up to my face, cold sweats rippling down my back. I swore the ceiling was churning with small black dancing shadows– like a hundred cat’s tails– bending and flicking in some macabre ensemble–
+And next thing I knew, as the ceiling stretched into the infinite, I began to dream. 
+
+Her lips trembled, peeled open; laboured breath hitched and simmered in a mellow drawl. Mucus ran in rivers down the canals of her throat and she rasped, gasping.
+Alyssa squirmed in bed, eyes bared, glistening wet orbs of jello. Stuart, Ren, Naomi and I stood over her like strange giants, swirling and vibrating and spreading out across the walls and ceiling.. She looked up, lips pale, tongue parched and tried to form words as we hallucinate shifted into black creatures; Ren kept flickering into that horned shape, eyes bone white rolling inky darkness bubbling forth again.
+“Something’s wrong,” she tried to say, but not a sound escaped, only a pale, writhing breath. “Help–” she tried again but it only came out as a thin, keeling, almost silent whine. The light glared buzzed like cicadas on an open field and the fever kept drawing hallucinations from her, rolling and crashing and endlessly pushing; silhouetted us into black forms; swirled, swam back.
+I opened my mouth to say something but my jaw was locked tight. I turned away for a moment, nauseous, a cold sweat dripping down my back. Ren put a hand on my back, sympathising– but then turned rapidly tugged my sleeve. I stared down. Alyssa’s chest canal had popped open, ribs exposed, and fungal growth was slivering free– small white bulbs unfurled from between her ribs, and out came pink and blue specs of fungal growth that swelled like balloons and then burst open little cups, spreading white specs like pollen through the air.
+“Fuck no,” I murmured, turned over, and in another dream–
+I rolled my eyes open at a gentle tap. 
+“Hey, Gabe.”
+The stranger from the night before was sitting at my bedside, shadows flitting around like a dozen tiny bugs. They rippled across his face in a dance of horror. I blinked and for a moment hallucinated Ren's shadow staring down at me, bone-dice eyes rolling– then forced the hallucinations away and before me was just Ramsey’s face, although the shadows were still there and dancing, dancing, in absurd comma patterns.
+“Hey, Ramsey” I said hoarsely, leaning back on my pillow. I coughed harshly–I was definitely coming down with something, something harsh. “Sorry to be rude, earlier. Usually I like to stay up when we have new arrivals. It’s good manners, you know?”
+And I hallucinated them all in my mind them at the dinner table– hallucinatory fever dream twisting them into singing angel songs, that went something like
+Lom, lom la la
+Lom, la la la
+“No, no,” he murmured, and his voice was sleek as a freshly shined black Mustang or a snake mamba’s venom-filled jaw, “it’s alright.” He smiled and my eyes darted to his features. 
+I finally got a good look at his face. He was oddly pale– a thin sort of pale, with red flush below. His teeth were good natured, nose sculpted, eyebrows slick although his eyes were a bit beady. His hair was done with gentle care– I could see hours of his pale, slim fingers curling through it, just a bit more gel with that lock, slicked to slim perfection.
+And his arm. Still it was wrapped in layers upon layers of bandages, although bloodstains were clearly visible between cracks in the layers. “Hey, Ramsey,” I croaked, “What happened to your arm after all?”
+He shook his head. “Another time, Gabe– that’s your name, right? Stuart told me, but I’m not the best at remembering. He smiled, passed me a glass of lukewarm water, which I greedily engorged– it was so old that bubbles had formed a the bottom of the glass but at that moment I didn’t care at all.
+Still feverish, but less woozy, I leaned back, smiling. “Thanks, Ramsey.”
+“Sure,” he said with an easy smile. “I won’t keep you long. I know you need your rest.” He reached out a hand for god knew what reason and at that point I pulled mine from the covers, took it and shook it warmly. He gazed at my glove and surprise registered in his eyes, but he only smiled wider, accepting the fact without question and gently shaking my hand with both hands, which I greatly appreciated. I felt warm around him– I felt safe. Gradually, he retracted his hand, rested it on my comforter. “So– actually, Gabe, the reason I’m here disturbing you is to give you something.”
+“Oh?” Despite myself, I was intrigued.
+“Oh yes.” Smiling warmly, he slipped a book onto my side desk, patted it. “This tells the story I was going to tell you at dinner.”
+Intrigued, I glanced at it and some disappointment hit. It was a religious tome– similar in appearance to the book of Mormon, but plastered with some other imagery and golden illumination that I couldn’t discern in the dark and hallucinations. 
+“Oh,” I said, smiling forcedly and trying to keep the disappointment out of my voice, “Thanks, Ramsey.”
+“Sure thing.” 
+I felt like he was about to leave and closed my eyes. Then without warning he placed a hand backwards over my forehead, frowned at the intensity of the heat. Usually, I would flinch– but something felt ungodly comforting about him that I only sank deeper. “Why, you’re burning up. Try and get some rest, Gabe– surely you’ll feel much better soon.”
+“Thanks,” I murmured sluggishly, closing my eyes and feeling only that cool, pale hand, a soft and dovelike shape, flouncing out into a cloud of a white fluff.
+“Oh, and Gabe– try and read that when you get the chance,” he murmured, increasingly distant.
+“Mmm,” I murmured, and all I felt was that cold, that gentle cold, a perfect sphere, no wrinkles, only a cloud so soft I drifted off into it, merged and melded with the fog and softly–
+
+`
+
+        const outputElement = document.getElementById('output');
+        const speedElement = document.getElementById('speedControl');
+        const sizeElement = document.getElementById('sizeControl');
+        const speedValueElement = document.getElementById('speedValue');
+        const sizeValueElement = document.getElementById('sizeValue');
+
+        let speed = parseInt(speedElement.value);
+        let size = parseInt(sizeElement.value);
+        let index = 0;
+
+        speedElement.addEventListener('input', () => {
+            speed = parseInt(speedElement.value);
+            speedValueElement.textContent = speed;
+        });
+
+        sizeElement.addEventListener('input', () => {
+            size = parseInt(sizeElement.value);
+            sizeValueElement.textContent = size;
+            outputElement.style.fontSize = size + 'px';
+        });
+
+        function typeText() {
+            // Use innerHTML instead of textContent to render HTML tags
+            outputElement.innerHTML += textToType[index];
+            index++;
+
+            if (index < textToType.length) {
+                setTimeout(typeText, 1000 / speed);
+            }
+        }
+
+        function changeColors(bgColor, textColor) {
+            document.body.style.backgroundColor = bgColor;
+            document.body.style.color = textColor;
+        }
+
+        typeText();
+    </script>
+</body>
+</html>
