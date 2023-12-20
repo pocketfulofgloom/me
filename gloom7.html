@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slow Type Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            transition: background-color 0.5s, color 0.5s;
+		background-color: black; /* Set the default background color to black */
+            color: white; /* Set the default text color to white */
+        }
+
+        #output {
+            white-space: pre-line;
+            font-family: monospace;
+            font-size: 18px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        #controls {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        #speedControl, #sizeControl {
+            margin-bottom: 10px;
+        }
+
+        .colorButton {
+            cursor: pointer;
+            padding: 10px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        #blackWhiteBtn {
+            background-color: black;
+            color: white;
+        }
+
+        #whiteBlackBtn {
+            background-color: white;
+            color: black;
+        }
+
+        #blackGreenBtn {
+            background-color: black;
+            color: #39FF14; /* Neon green color */
+        }
+
+	#beigeBrownBtn {
+		background-color: #F5F5DC;
+		color: brown
+}
+    </style>
+</head>
+<body>
+
+    <div id="controls">
+        <label for="speedControl">Speed:</label>
+        <input type="range" id="speedControl" min="1" max="100" value="32">
+        <span id="speedValue">5</span>
+
+        <br>
+
+        <label for="sizeControl">Text Size:</label>
+        <input type="range" id="sizeControl" min="10" max="30" value="18">
+        <span id="sizeValue">18</span>
+    </div>
+
+
+    <div>
+        <button class="colorButton" id="blackWhiteBtn" onclick="changeColors('black', 'white')">Black Background, White Text</button>
+        <button class="colorButton" id="blackGreenBtn" onclick="changeColors('black', '#39FF14')">Black Background, Neon Green Text</button>
+ <button class="colorButton" id="whiteBlackBtn" onclick="changeColors('white', 'black')">White Background, Black Text</button>
+	<button class="colorButton" id="beigeBrownBtn" onclick="changeColors('#F5F5DC', 'brown')">Beige Background, Brown Text</button>
+    </div>
+ <br>
+    <div id="output"></div>
+ <br>
+ <div>
+	  <button class="colorButton" id="whiteBlackBtn" onclick="location.href='index.html'">main.</button>
+    <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom1.html'">chapter 1.</button>
+    <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom2.html'">chapter 2.</button>
+	     <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom3.html'">chapter 3.</button>
+     <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom4.html'">chapter 4.</button>
+    <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom5.html'">chapter 5.</button>
+	     <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom6.html'">chapter 6.</button>
+     <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom7.html'">chapter 7.</button>
+    <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom8.html'">chapter 8.</button>
+	     <button class="colorButton" id="whiteBlackBtn" onclick="location.href='gloom9.html'">chapter 9.</button>
+</div>
+      <script>
+        const textToType = `
+PART III: REN’S TRIAL
+
+Ren witnessed the end of this conversation. They were standing in the doorway to the kitchen, trembling, clenching silverware and plates close to their chest to rattle and clack and ding. As Stuart’s thin drawl spun a tale of satanic devices housed behind Naomi’s eyes, Ren quivered and shook and dropped a china plate to shatter in a rain of ceramic shards across the floorboards.
+	My gaze locked with theirs and Ren’s hawkish eyes fixed into mine, irises quaking.
+	Not telling Ren exactly what happened in that moment; what my fingertips did to what they touched, and what they’d done to Naomi’s eyes; not telling Ren, in that shivering moment, as those eagle eyes locked on my own, everything that had become of her; was something I’d sorely regret.
+
+7 //  REN’S TRIAL
+
+In the void, a five-pointed star shimmered crimson. The sharpened tip of each point bulged, swayed, compressed and shook; looped over itself in a fatally doomed attempt to free itself from conformity and breathe freely. Those jagged red lines swung and stretched as if pulled by marionette strings, but, springs pulled out of shape, they snapped into place after each marred attempt. Failing to free itself, the shape reverted and jagged back into perfection; glowed, faded.
+
+My crusty eyes creaked open, specs of dust settling down on those filmy wet globes as I blinked. I must’ve fallen asleep on the couch. A shadow danced and crawled across the fabric of my shirt; my eyes traced it back across the crooked floorboards to the tired form that cast it.
+	Ren sat across from me, hands clenched to their knees firmly, white knuckles glaring like ten fiery suns that seared deep into my mind. The white balls of flame danced and swum; the air behind them shimmered, roiled, and melted into a quivering rusty sunset. The ten glowing fires fixed firmly into the reds and yellows of the sky each swirling endlessly and relentlessly into itself. Below lay an endless desert plain where some ill-conceived sculpture of Ren’s bust crumbled into collapsing sand.
+	Ren was a creature to both enjoy and be weary of. Their dyed green hair glistened in the light. Their vibrant green eyes never failed to fix with intensity into mine. Their gaze, while toasty warm like a blanket heated on rough bricks before an open fire, was extremely sharp— when Ren had a question in their mind, they vocalised it with fixed intent. Their voice was warm, grainy, and carried a slight raspy cadence as if ever so slightly hoarse. They would form their questions openly, but always had prepared a set answer in their mind. If you didn’t answer the way Ren liked, there would be hell to pay by their hands. 
+	Ren and I had a good relationship, with a few hiccups— they loved me but they didn’t trust me, and I felt the same way. Something else glaring and obvious had wedged itself in our friendship like a boulder between twin peaks. 
+	“What did you show Naomi?” Ren asked calmly. The statement rolled off the tongue as a question. What did you do to put those machines behind her eyes?
+	You have to tell them, Gabe. My eyes rolled tiredly in their casings. “I didn’t show her anything, Ren. I know you won’t believe me, but it wasn’t like that. Something else happened that you’d never understand.”
+	I remembered a heated discussion I’d had with Stuart:
+	“You have to tell Ren the truth. You can tell them on your own damn time,” he’d said, meaty hands quaking furiously, “But you’d better do it soon. Gabe, Ren has suffered more than even Naomi this past week. You didn’t see what I saw. You have to promise me that you’ll tell him. Swear to me, Gabe.”
+	“I promise,” I said, trembling. 
+	And I meant it, too. I’d tell them— just not yet. After all, how could I trust Ren with anything? After all the shit they’d pulled in the past— no, they’d have to wait.
+	Ren seemed like they were about to open their mouth when a crash and a shatter from the other room rang out with the clattering of a billion sirens. This was a great indication that Naomi was in a psychotic period. Ren scuttled out to deal with it, and for once I let them.
+	Presently, I saw Naomi shuffling in with Ren’s arm around her shoulders. Ren steadied her, easing the girl down to rest, and I watched Ren’s hawkish gaze carefully. Their eyes were locked on Naomi’s eyes. Ren had concerned, concerned eyes. Maybe, probably more than concerned. 
+	Increasingly tensely I watched this interaction, eyes quivering under hooded lids and lips pressed firmly together. I knew how Ren felt towards Naomi— or at least, how they used to. Ren came, presently, to stand in front of me with their arms tightly folded. I pretended not to notice, eyes dark slits under garage door lids.
+	“You know you’ll have to tell me eventually,” Ren said. “What you showed Naomi. I know when you’re hiding something.” I rolled my eyes over to gaze at them. Sure you do, Ren, I thought to myself with more than a little pent up anger. You definitely know me. You definitely listen to me– not a doubt in my mind. Or– wait– do you only pay attention when it has to do with Naomi?
+Fucking thought so. 
+I glanced down at the curvature of her body. Naomi’s form shifted, stretching, moving her skull to rest gently on my rising and falling chest. My gaze locked on her shimmery locks before looking back up at Ren. 
+Well, she’s mine either way. There’s nothing you can do about it.
+	Ren snapped their gaze back to me. “You should get some rest,” they said with thinly veiled contempt. “I know you’ve been struggling to sleep lately. Those memories still keeping you up at night?”
+
+Naomi convulsed on the hardwood floor, foam leaking from her mouth in a frothing bubble to splatter across the wood. As I watched with horror, the bubbles duplicated, spread, filled the room in a growing frothy sea. The ocean drowned her as she thrashed and twisted endlessly squirming underneath the tides.
+	Ren stood in the hallway, listening to me thrash in my sheets.
+
+	Or—
+
+Naomi spread her arms wide, fingertips sailing across the cosmos, as obsidian crows marred the sky, dipped, ruffled by her ice-white fingertips. The crows cawed, soared through the navy blue night; they swooped. They fell from the sky as heated coal-black meteors spewing twirling pillars of steam. Groaning with remorse they slammed into the earth, that wet black earth where a grimacing face with placid lake eyes was carved.
+
+I blinked my eyes without responding. Ren studied me, unmoving. Then they said, “I have some research to do anyway. We’ll talk later tonight.”
+	Their attentive eyes caught a slight twitch, a small grimace as it creased into the skin of my cheek, and their own expression softened. For the first time during this conversation, a genuine smile flushed into Ren’s face. “Gabe? I mean it— we’ll talk later tonight. I’m sorry I’ve been so harsh. I’m just worried about Naomi. I can’t wait until we can all get together again, just like before.”
+	They let the just like before hang in the air. 
+	I rose to my feet, Naomi flinching awake and clinging to me. I hugged Ren genuinely. We all embraced sincerely, albeit Naomi being muted and out of her mind. 
+	I stumbled off to bed, Naomi following close along with me. I heard Ren patter off.
+	
+	
+A muffled, faraway sound rang through the silent night to warble blearily into my ears.
+	I shifted, uncomfortable. I felt like a thousand pinpricks were seeping their way into my skin, drawing my lifeblood out to soak into the bedspread. The blackness around me shook and shuddered, and my lungs buzzed with a million motors burning twisting; ached; my breath was shallow. Something pressed down on my chest with impossible weight, increasing, increasing until all I felt was pain. I couldn’t force air into my body. 
+	A sound again, warbling as if underwater and drowned. I tried to turn over, but I couldn’t breathe, couldn’t move. I willed by the strength of a thousand Spartans to grind my eyelids open. 
+A pitch black, unmoving silhouette hung over me. As I stared into that blackness, the mosquitos drained the blood from me faster. The weight on my chest grew, bent my ribs to scrape against the taut muscle of my lungs. 
+	 
+Exploring, sharp fingers dug into the fingers of my glove, yearning, tugging.
+	The pitch black form hung utterly still above me. Fear radiated off of it in long, languid waves, crashing and rolling like static across a television screen. They rippled through my body, burning and aching, eliciting a buzzing, pained gasp with each cresting wave. I stared into the blackness and bone-white eyes with minuscule pupils flashed open, faded, jostled around. Dark shapes spurted from either side of that pitch black skull, spiralled unnaturally quickly, twisting and twining to bloom into jagged horns nearly as long as the silhouette was tall. They extended into the night.
+	Sharp fingertips squeezed my hand again and nicked my smallest finger. This time that finger flinched, curled. The thing above me stood perfectly still, staring down at me with indifference. I managed to curl my pinky finger tight, dragging my ring finger reluctantly with it. Gradually, the other fingers on my hand gained feeling; then feeling snapped suddenly into my arm, pins and needles erupting like wildfire to proliferate their way across my skin.
+	I pressed down hard on the bedspread with my arm and managed to swing my body onto its side. I felt a hard impact against my chest and suddenly I could breathe, gasping raspily chilly and vital air.
+	I forced my head up on an aching neck. The shadows were gone, all lingering black flickers sputtering away into nothing. Only the burnt afterimage of those bone-white eyes like dice rolled into the inky darkness lingered in my vision, slowly fading.
+	I rolled over gently and saw Naomi staring into my soul. There was a blush on her cheeks; I yearned for it and those dancing, swimming freckles. I wondered what was held in the depths of those placid lake eyes, what arcane machinery was ensnared in the mud at the bottom. I wondered what would happen if I dived down there, and what I would find. 
+	The sharp fingernails gently traced patterns into the skin of my wrists. I realised, then, that Naomi had helped to drag me out of that trance. As I watched her, Naomi’s eyes rolled languorously under her lids, rotating to glowing golden irises that glimmered in those slot machine sockets. Her heavy soft lips moved.  The harsh, startling and altogether unexpected noise that woke me repeated itself verbatim, albeit less blurred.
+	“Ren went downstairs,” Naomi said simply, shapely, intellectually. 
+	“Went downstairs?” I mumbled back, rubbing my arm and stretching awake. Then my glare snapped back to her. “Naomi? You’re in your psychotic period. You spoke.”
+	As I gazed at her she looked helpless again— something between the look of a dog who hurts but cannot express it, can not speak and never has been able to; and that of someone whose mouth has ceased to function but whose words hide quivering behind tightly pursed lips. 
+	Shit. What the hell is this? I tried to focus on the intelligent part of her eyes. “Stay here. Got it?”
+	Naomi either nodded slightly or her head sunk back to the pillow. It was impossible to tell. Her casino slot eyes rolled and glowed and whirred, settling on the red irises of a snake. I wandered off, easing through the darkness. The idea of Naomi’s sentience in psychosis haunted me— those words, fluttering past her softly locked lips, had shown recognition. Somewhere, deep inside that insane mind of hers, did she remember me? The shadows grew and stretched as I traipsed through the house. Each creak of those ancient, weathered floorboards emitted the sound of a rocket blasting and roaring into the midnight hour.
+	Ren. What the hell are you up to?
+	The darkness pumped, throbbed, pulsed and ached; yet the sounds waned in intensity as I wandered deeper. The further I meandered into the house, the more the sounds were washed into a muffled roar. They were replaced by a near silence that quickly grew impeding. 
+By the time I reached Ren’s study, I couldn’t hear a single sound. The silence in my ears was blasting, radiating rivulets of fear to trickle down my body like a cold sweat dripping down. I peered around Ren’s door and blinked twice. Easing gently into that silence, I laid a gloved finger down on the ruffled page of their book on the desk.
+	The exposed page was carefully inked. I realised with horror that it was coated with handwritten satanic jargon. Cryptic summoning circles and diagrams blotted the crisp yellow pages; piled upon them were mixed papers from scientific journals torn off and skewed about. Here were spread medical textbooks relating cases of blockage to the vision; there upon the stacks of paper clung desperately sticky notes denoting Ren’s inferred connections, peeling with incongruous yellowing. Other arcane shreds were pinned down intently via glassware or scattered in combustible heaps across the decrepit floor.
+	Three black candles melted wax in oozing globs down onto the paper, melding tar rivers to dribble over the anatomical body diagram of a human being with a satanic crimson star blotted on their forehead.
+	“Shit,” I swore, and blew the candles out one by one. I felt a tremendous wave of remorse blast through the air; for a moment, I saw in my memory that black silhouette, bone-white eyes flickering around in the darkness.
+	Ren. What the hell have you got yourself into?
+	Now I knew why Ren went to the basement. While Stuart turned to the medical to help Naomi and in order to deal with the reality of her new psychotic state, Ren had turned to the satanic. They could’ve waited. They just should’ve trusted me. What kind of ritual were they performing?
+	The silence was ringing, buzzing, becoming ear-splitting.  I descended into the darkness, eased my way into the stairwell of the basement. I clutched the rough railing with a sweating, clawed grip; dragged along that splintered wood with velvet-coated fingertips.
+	The staircase seemed to twist around me, to warp, deform and reshape. With each step, the air around me thickened. I felt my steps impeded, I wobbled. Soon I felt like I was wading through layers of a thick gel. I breathed heavily, roughly, shaking and shivering— soon I found I had to claw the air aside. I ripped into the darkness with my gloved fingertips to pull off so many globules to clump in the air. Vital nitrogen and oxygen, necessary from yawning birth to dying breath, betrayed me; my lungs began to sear and burn with an aching alarm.
+	Fearful and frustrated, I snapped off my gloves, clawing my bare fingernails into the gel around me. With a torrent of pixel-like corruption, the air sloughed away in sheets; to my surprise, a thin yellow glow shone through and blossomed. 
+	My heart beat once, twice, out of rhythm. A yaw and pitch to my heart distracted me as I gritted my teeth, peering deeper in; I saw a yellow-lit hallway branching into a carpeted room; a chill, leaking and moulding air blossomed into my face. In my 22 years of life, never in my memory had I corrupted a gate to another space. This was entirely new to me. The room within the gel seemed to lead to other hallways, deeper and dimmer, corridors and hallways both familiar and not. 
+	“I’m dealing with you later,” I muttered to the yellow world. For now, the priority was finding Ren—  and pushing forward was the only way to go.
+	I stepped into that halcyon lit hall, the gel curtains brushing against me, and saw another swimming, filmy gel swaying above the carpet. Amidst the sound of something bouncing echoed darkly down the glowing hall, I reached into the film with my sharp bare fingertips and tore my way through it. I peered through the gap to see the rest of the darkened hallway leading to the basement main.
+	I stepped through that glowing space into the basement. As I passed into the oppressive air, the beating silence returned. Ren was standing in the corner of the basement, but standing was a strong term. 
+	Ren was unnaturally, grotesquely held upright. Their back was facing me, muscles bulging, rigid. They were standing in the absolute corner of the room, eyes facing something only they could see on the far wall, only inches from the corner. If I turned my head too quickly, I saw malformed, twisted shapes like massive elongated horns growing from both sides of Ren’s head— one dipping through the closest wall. Their shadow displayed them as well. 
+	What the hell are they doing? I thought as I stood there, frozen. What the hell is Ren trying to see? 
+	They’re trying to help Naomi, a voice said in my head, trying to see what she sees. Ren is trying to save their friend. Suddenly melancholy, I snapped ahead and rushed forward with guilt reverberating through my chest to grab Ren’s shoulder. 
+	I ripped them out of the darkness and a black puddle oozed out from under their shoes; the shadowy horns flickered once, twice, peeled from them in a shadowy silhouette and vanished. “None of this,” I growled, ripping Ren through the filmy barriers as the staircase twisted back into shape around me, normalised. “None of this is right.” The yellow hallway snapped out of existence behind me; the gel in the air rippled and dissolved in thick clumps, settling to the ground and evaporating— the walls creaked and refluxed, old floorboards crackling and snapping into place with a deep, yearning creak. I ran up the stairway with them, heart pounding incessantly in my ear, heart throbbing painfully as fear ripped its way through my veins.
+	“This, Ren?” I exclaimed to my friend, “This is why you wait! This is why you wait for me to fucking trust you again!”
+	I realised Ren was bawling, crying, mewling like a hurt sheep. I froze. The stairs were mostly reformed, only fluctuating corners warping back into place. I hesitated there, holding Ren to me.
+	I’ve pushed Ren too far this time. I should’ve just told them. I waited too long to trust them– yet here I am putting the blame on them for how they reacted. What kind of friend am I, huh? 
+ I remembered how we were long ago, recalled that blissful, fuzzy, glowing blue-gold time. 
+
+A flowing crystalline memory. In a time long past, Ren and I climbed a bulbous, periwinkle mineral growth glittering with dandelion splotches. We were in the depths of a cavern, a misty waterfall sprayed down, glittering with a fuzzy white light. Everything was alive and warm. I remembered what they told me as the glittering chamber echoed it back. 
+	I stood there, frozen. Moments later, they said: “we’ll be like this forever, won’t we?”
+	I smiled, sure of it. “Yeah, we will.”
+
+I put my lips up to their ear, murmured the words they’d said, held them close, and kissed them gently.
+	Then I stumbled and ripped us up the stairs. I tore Ren past the final wobbling film of air and threw them to the couch as one last crooked stair reformed to normalcy behind me.
+	Sound returned with a pop. I watched Ren ease down into the cushion, already snoring gently against the fraying couch’s fabric ties. I stumbled over to the couch, melted down beside them, fell asleep, fell down into slumber.
+	
+Something was wrong. 
+Naomi had somehow found her way over to the living room— she was curled up comfortably against me, her delicate form rising and falling softly. Easing her delicate weight off of me, I rubbed my eyes dry and eased into the hallway. Why did I wake up? I inched my way across the floorboard and nearly tripped across some carpeting, toes pressing into those sweet soft tendrils that drew themselves across my feet in a thin embrace. I stumbled my way into the kitchen, glancing all about with bleary orbs. I froze as I heard a rip and an explosion of glass from the study, and an exclamation of frustration in Ren’s distinct voice.
+	My fists clenched and unclenched. Carefully, I eased my way to the room as my stomach plummeted to my feet. I froze in the doorway. Two figures fought in a heavy blur.
+	“Why?!” Ren screamed as they grappled with a bedraggled Stuart. “Why won’t you let me see what she sees?” 
+The study was a chaotic mess. The books and carefully organised studies that Ren had displayed across the table only hours ago were skewed to the floor with careless abandon. Clamped to the desk was a metal contraption with four tiny gleaming hooks dripping red at eye level. It was surrounded by labelled glassware containing frothing liquids and a dissection tray. That tray was laid with dully gleaming scalpels, forceps, tweezers, and a single blurry red form. A shattered beaker was dashed across the floor. From the broken bottom of it, hundreds of squirming wormlike creatures with jointed blood red legs spiralled. 
+	Broken glass. 
+
+I touched those glittering shards one by one and they bloomed and blossomed into beetles, bugs, and vibrant birds that fluttered into the air and shot all around me in a whirlwind. Blood trailed from my feet.
+
+I stared as the small bugs wriggled away into nothingness. Ren managed to break away from Stuart’s arms. They yanked themselves back and gripped for dear life to the mechanism on the table. Stuart growled, grabbed their wrists, looming like a massive grizzly bear. Slowly but surely, Stuart pried Ren’s fingers from the mechanism’s glimmering length. As he freed their last painted finger away from the crooked metal, Stuart positively tore them away from it and slammed them against the wall.
+	I stepped into the room. Ren saw me and froze, face distorting— whether with rage or exhaustion I didn’t know. “Gabe,” they mumbled, melting.
+	Stuart took this opportunity to reach over to the table and take a pair of tweezers from the dissection tray. He stared down with pebble eyes and fixed that single remaining red bug on the dissecting tray between the tweezer’s metal tongs.
+	Ren howled with rage as Stuart plunged that wriggling bug into a beaker of acid with a fizzle. Stuart gave me a long, meaningful look; This is what happens when you don’t do what I say, those eyes seemed to say, and his eyes flared with contempt. He released Ren and stormed his way out. 
+	“I just want to see what she sees,” they sobbed, sniffling and crying out between tears. “Why won’t you two let me?” 
+Ren stood in the dark, dark horns protruding a foot out to either side of his skull, head twitching and eyes wild.
+	I took Ren to me and they clenched their arms around me, pressed their face into my shoulder and muffled it there. They sobbed against my form. “It’s going to be okay,” I murmured. I need to stop saying that. “This isn’t what you think. I mean it, Ren— I didn’t show her anything– arcane– like you think. I’ll tell you everything.”
+	For a moment, full comprehension seemed to dawn on Ren’s face. Then it flickered away and they looked like they were going to beat me. Then they screamed. They screamed and screamed and pummelled their fists against my chest. “She saw something she shouldn’t have, Gabe!” Ren howled obsessively, “I know she did! I just need to see it, just like her. I did everything the book told me, Gabe! Look at the book, look, look!”
+	I scanned the floor until I saw it— the black rippled cover of that arcane book, coated in the dust of broken glassware like a thousand grains of transparent sand. I bent down, leafed through the pages amidst shards of glimmering moonlight to the diagram Ren had bookmarked.
+	To see what cannot be seen, it read in calligraphed text; to pierce the veil that runs along the wetness of your sclerae; to revolve those infernal mechanisms; do this. To my horror there was an illuminated diagram of the human eye stretched wide with metal prongs. A caricature of a blood-red demon with a vicious leer was bent over the socket. It extended a sinewed arm; two of its spindling, clawed fingers frozen pinched a squirming red bug between them. The bug was held precariously over the constricted pupil, squirming, about to drop into that swimming pool. 	My eyes flicked to the four metal prongs on the mechanism that was fixed to the table and pictured them stretching an eye wide open, pulling back the twitching lids. The hooks, I noticed, were dotted with cloying blood.
+	I shook, tremmored, and turned to face my friend. “Ren. I can’t let you do that.” I could almost see it: The many-jointed worm wriggled in Ren’s eye, laying maggots, reproducing; they proliferated, filled it, burrowed. The pupil swirled blue in a smoky gate to some unknown hell, and they saw all, every last thing that Naomi had ever seen when her mind went kaput. No, more than she had. Who knows what infernal patterns were carved like mazes by the bugs behind those constricting pupils. I held my breath, counting down.
+	You have to tell him, Gabe. There’s no more waiting. I twitched.
+	I saw Ren towering over us. Naomi cowered in bed next to me. We had only been talking, though she was absurdly close to me, the skin of her cheek brushing against my shoulder.
+	The air had turned bloodred, an infinite crimson dripping sky. Ren was screaming, screeching at her. It was all her fault! They said, Couldn’t she see what she’d done to them? She made them feel like this. She made them feel like ripping out their soul and ripping it out with that glittering black deadly thing clenched in one constricted veiny fist.
+	I blinked and started to leave the room. I hesitated in the doorway.
+I can’t tell them.
+	I have to tell Ren the truth. 
+	I can’t tell them.
+	I have to, I have to, I have to!
+	I turned around, reached out a hand. “I’ll tell you. Full honesty. I promise.”
+Ren reached out and their fingers brushed against my fingers and grabbed them; crushed them. As I dragged Ren along I felt their veins pulse insanely through the velvet of my glove. At the doorway, Ren suddenly tore away from me. When I turned around, they stood upright, eyes quivering with a mad, insane rage. “Oh, I get you, Gabe,“ Ren muttered. “I get you. Full honesty, huh? ‘No, no, Naomi didn’t see anything. Nothing at all, Ren! It wasn’t like that!’ Gabe— I don’t believe you. Not one bit.”
+	I felt fixed, strung into place by a million threads sewn through my organs and stretched into oblivion. I’m too late. I’m too late to do anything. I remembered the night, again, when Naomi shattered that mirror. 
+When I got back to her bed, the bloodied rivers marred by jagged mirror’s glittering fragments had crusted over. It was too late to patch her up myself.
+I stood as a spectator on the sidelines. In one fluid movement, Ren grabbed the forceps and bent over rapidly, precisely, to pluck a squiggling bug from the floor. The metal shimmered, gripped bursting, knotted fist with tendons strung to snapping. Ren bent back, laughing, and for a moment juxtaposed in their form I saw that blood-red illuminated demon; and then Ren dropped the bug into their own eye. Then it was just them, poor, trembling Ren, and they screamed and quivered and slammed to the ground. The maggots proliferated.
+	I was immediately at their side. Ren was panting, arms flinching, nauseous. The veins in their face pulsed harder and harder until they became visible, writhing and bulging near to popping. As I gripped their arms, Ren slithered out of my grasp and pushed to their feet. They shuffled to the wall and stood near the corner of the room, leaned forward, and stared into something only they could see only inches from the corner. They mumbled incoherently.
+	I stood up. “Ren,” I muttered cautiously. They didn’t turn. The muttering ceased. “Ren?” I grabbed their shoulders and turned them to face me. Horror struck through me.
+	The face of the Ren that I knew was gone. Instead was coiled a stringy mess of discordant black yarn, lines knitting in a swimming chaos that rippled and swam to roughly approximate the shape of a human face. From the squiggling darkness the tangles unveiled eyes, deep and pitch black, darkness that swirled like endless chasms, black holes into nothingness. I blinded my eyes to what I saw on their face with sheer force of will and blindly pulled Ren into a hug. 
+	“I’m sorry Ren,” I muttered again and again. “I’m so sorry.”
+	I gripped them tight. 
+After a time, I felt that something had changed; I glanced down to see that their exhausted face was back, Ren’s normal features gently nuzzled against my shoulder.
+	
+I dragged them along with me.
+	I stormed through the night-dark halls, carpet rippling below me and loose frays rippling and dancing around my feet. “Stuart? Stuart!”
+	I got to the dining room and stopped. He was sitting, lounged back in an ornate chair, fingers drumming rhythmically on the woven crimson tablecloth. The walls, a deep mud brown, pressed firmly against dark antique, intricately carved cabinets with frosted glass windows. There was a table delicately carved with spiralling designs that depicted flowers, small critters, butterflies; the table stemmed from clawed feet like those of a majestic lion. On that nearly-black wood was spread a flowered red cloth; around the table crowded matching ornamented wooden chairs. Ornate windows broke up the shadowed cabinets through which the chill night pulsed and through flowed thin moonbeams.
+	I eased Ren’s barely-conscious form into a chair, eyes gazing bitterly over their warm, tired features. 
+	Stu stared at Ren. “Alyssa’s arriving soon,” Stuart drawled. I stared at him. “You should wait for her here,” he continued, hot pebbles glaring.
+	So he knew. He knew what I had to do. What I was planning to do. I met his burning pebble eyes, hesitated a moment longer, then took a seat, pressing my chin into the tablecloth. Alyssa. 
+She was there, too, the night gloom scraped against my parched organs and bloomed a new life into my world. In the early morning, unaware of Naomi’s condition, Alyssa had flown abroad– as had Makena and Mason, the twins and the last two friends of mine that stayed regularly at our house. One by one, my friends were returning home. And one by one, I’d have to expose the lie I’d been living to them. 
+A deep weight settled in my chest. I stared at my gloves; they were drenched in sweat and darkness like an everlasting night. It felt like I was about to lose something deeply intrinsic to me. A deeply held secret that had sustained me for years and years of my life. Like skyscrapers shorn off the map of a brilliant city one by one until there was nothing but an empty smoggy sky, I felt my world tearing down around me.
+	What am I without that secret? I thought to myself. What if the secret of my corruption is who I am?
+	A grey, empty sky.
+	What if  without that I’m hollow? I felt my chest constricting; my body collapsing in on itself, curling. What if the guilt I hold for what I’ve done to others and to myself— what if that’s me? 
+	Lawson laughed, giggling, through a field of glowing wheat. She doesn’t laugh anymore. At least not to me. 
+This secret has become such an intrinsic part of me.  Every damn thought I have is about covering up the corruption that graces my fingertips. What if, emptied of that, I am nothing? That endless need to hide, that mystery, gone? 
+I stared into the tablecloth with increasing anxiety as the patterns swum, swirled around each other and sheared off to drift across the grainy darkness of the mind.
+	What if I’m boring?  Grey, grey clouds. Nothing here to see. 
+What if my friends hate me? I lied to them for all these years. 
+I looked down and saw it was Ren there with their eyes swirling purple smoke.
+
+	My friends, giggling and laughing on a beach. My velvet gloves glimmered under a sunset of smearing burning orange, yellow and deep navy blue. I laughed with them as I glanced under a wide brimmed hat and hidden by deeply shaded sunglasses to analyse them one by one.
+	What if I lose them? 
+I could see it in a flash: Alyssa walked away in that navy blue midnight, her springing black hair rippled by the cloying wind as she dragged a travel bag by one hard clenched-paling fist. Stuart regarded me with loathing eyes, silhouetted by the crimson sun. Ren stared at me with raging contempt, for once wordless, emptiness dribbling nothingness out of their mouth. Gently, I pressed my fists into the table. I closed my eyes tight and willed the hallucinations to melt away, fade.
+	If that’s how it is, that’s how it is. 
+Yeah. I could handle that.
+
+`
+
+        const outputElement = document.getElementById('output');
+        const speedElement = document.getElementById('speedControl');
+        const sizeElement = document.getElementById('sizeControl');
+        const speedValueElement = document.getElementById('speedValue');
+        const sizeValueElement = document.getElementById('sizeValue');
+
+        let speed = parseInt(speedElement.value);
+        let size = parseInt(sizeElement.value);
+        let index = 0;
+
+        speedElement.addEventListener('input', () => {
+            speed = parseInt(speedElement.value);
+            speedValueElement.textContent = speed;
+        });
+
+        sizeElement.addEventListener('input', () => {
+            size = parseInt(sizeElement.value);
+            sizeValueElement.textContent = size;
+            outputElement.style.fontSize = size + 'px';
+        });
+
+        function typeText() {
+            // Use innerHTML instead of textContent to render HTML tags
+            outputElement.innerHTML += textToType[index];
+            index++;
+
+            if (index < textToType.length) {
+                setTimeout(typeText, 1000 / speed);
+            }
+        }
+
+        function changeColors(bgColor, textColor) {
+            document.body.style.backgroundColor = bgColor;
+            document.body.style.color = textColor;
+        }
+
+        typeText();
+    </script>
+</body>
+</html>
