@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); /* Adjust the overlay color and opacity as needed */
+}
+
+#video-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+h1 {
+    font-size:3em;
+font-family: monospace;
+color: white;
+}
+
+.responsive-button {
+    padding: 15px 25px; /* Adjust padding as needed */
+    font-size: 16px;
+   border-radius: 5px;
+    background-color: black; /* Adjust button background color */
+    color: #39FF14; /* Adjust button text color */
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+font-family: monospace;
+}
+
+.responsive-button:hover {
+    background-color: #2980b9; /* Adjust button background color on hover */
+}
+
+@media screen and (max-width: 768px) {
+    .responsive-button {
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+        font-size: 14px;
+    }
+}
