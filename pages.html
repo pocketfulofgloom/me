@@ -3,44 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>a pocket full of Gloom</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylespages.css">
+    <title>Your Webpage</title>
 </head>
 <body>
-    background-color: black;
-    <div class="video-container">
-        <video playsinline autoplay muted loop id="video-bg">
-            <!-- Add your video source here -->
-            <source src="GLOOM.mp4">
+    <div class="video-background">
+        <div class="video-overlay"></div>
+        <video autoplay muted loop id="video-bg">
+            <!-- Include your video file here -->
+            <source src="GLOOM.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
+    </div>
 
-    .button-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      padding: 20px; /* Adjust the padding as needed */
-    }
-
-<div class="button-container">
-
-  <h1>CHAPTER SELECT: </h1>
-<br>
-  <button class="button" href="gloom1.html">chapter 1: gloomstick</button>
-  <button class="button" href="gloom2.html">chapter 2: band-aid pills</button>
-  <button class="button" href="gloom3.html">chapter 3: on a cerebral beach</button>
-  <button class="button" href="gloom4.html">chapter 4: the moon and the sun</button>
-  <button class="button" href="gloom5.html">chapter 5: grace is golden</button>
-  <button class="button" href="gloom6.html">chapter 6: naomi the dealer</button>
-  <button class="button" href="gloom7.html">chapter 7: ren's trial</button>
-  <button class="button" href="gloom8.html">chapter 8: alyssa arrives</button>
-  <button class="button" href="gloom9.html">chapter 9: a visitor lately</button>
-  <button class="button" href="gloom10.html">chapter 10: red butterflies</button>
-  <button class="button" href="gloom11.html">chapter 11: don't forget me</button>
-  <button class="button" href="gloom12.html">chapter 12: building up // zombie days</button>
-  <button class="button" href="gloom13.html">chapter 13: bloodred skies</button>
-  <button class="button" href="gloom14.html">chapter 14: the great corruption</button>
-</div>
-
+    <div class="button-container">
+<h1>CHAPTER SELECT:</h1> <br>
+        <button class="responsive-button" onclick="window.location.href='gloom1.html'">chapter 1: gloomstick</button>
+        <button class="responsive-button" onclick="window.location.href='gloom2.html'">chapter 2: band-aid pills</button>
+	<button class="responsive-button" onclick="window.location.href='gloom3.html'">chapter 3: on a cerebral beach</button>
+        <button class="responsive-button" onclick="window.location.href='gloom4.html'">chapter 4: the moon and the sun</button>
+	<button class="responsive-button" onclick="window.location.href='gloom5.html'">chapter 5: grace is golden</button>
+        <button class="responsive-button" onclick="window.location.href='gloom6.html'">chapter 6: naomi the dealer</button>
+	<button class="responsive-button" onclick="window.location.href='gloom7.html'">chapter 7: ren's trial</button>
+        <button class="responsive-button" onclick="window.location.href='gloom8.html'">chapter 8: alyssa arrives</button>
+	<button class="responsive-button" onclick="window.location.href='gloom9.html'">chapter 9: a visitor lately</button>
+	<button class="responsive-button" onclick="window.location.href='index.html'">chapter 10: COMING SOON: red butterflies</button>
+<button class="responsive-button" onclick="window.location.href='index.html'">main</button>
+    </div>
 </body>
 </html>
