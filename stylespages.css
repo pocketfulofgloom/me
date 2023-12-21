@@ -60,12 +60,12 @@ font-family: monospace;
 }
 
 .responsive-button:hover {
-    background-color: #2980b9; /* Adjust button background color on hover */
+    background-color: red; /* Adjust button background color on hover */
 }
 
 @media screen and (max-width: 768px) {
     .responsive-button {
         padding: 10px 20px; /* Adjust padding for smaller screens */
-        font-size: 14px;
+        font-size: 1.0em;
     }
 }
